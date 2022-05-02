@@ -1,0 +1,107 @@
+@import "../base/extends";
+@import "../base/listas";
+@import "../base/variables";
+
+
+.Products-container {
+    background-color: $color-sectiona;
+    border-top: $border-top; 
+    padding-top: $padding-top;
+}
+
+h1 h2 {
+    padding-bottom: $padding-bottom;
+    padding-top: $padding-top;
+}
+
+.Row1 {
+ @extend %flexbox;
+}
+
+.Titles3 {
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+    padding-left: $padding-left-2;
+    padding-right: $padding-right-2;
+    font-family: $font-family-titles;
+    font-size: nth($sizes-titles, 1);
+    font-weight: nth($weight, 1);
+    color: $color-h2;
+    text-align: center;
+}
+
+.P1 {
+    width: 50%;
+    padding-top: $padding-top;
+    padding-right: $padding-right-2;
+    font-family: $font-text;
+    font-size: nth($sizes-titles, 3);
+    font-weight: nth($weight, 1);
+    text-align: center;
+}
+
+.Row2 {
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+    font-family: $font-text;
+    font-size: nth($sizes-titles, 3);
+    font-weight: nth($weight, 1);
+    @extend %flexbox;
+}
+
+.Productos {
+   background-color: $color-sectionb;
+   padding-top: $padding-top;
+   border-top: $border-top;
+   padding-bottom: $padding-bottom;
+   @extend %flexbox;  
+}
+
+#carouselExampleIndicators .carousel-slide {
+    width: 75%;
+    @extend %flexbox; 
+    background-color: #433451
+}
+
+.carousel {
+    @extend %flexbox; 
+}
+
+
+.carousel-item .carousel-item active {
+    transition: all 2s;
+    transform:none;
+}
+
+.SectionF {
+    background-color: $color-sectionc;
+    border-top: $border-top;
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+}
+
+.btn-primary {
+    color: $color-h2;
+    background-color: $bg-color-card;
+    border-radius: $border-radius-btn;
+    border-color: $border-color-btn;
+}
+
+.btn {
+ @extend %flexbox;
+}
+
+.btn-primary:hover {
+    color: $color-h2;
+    background-color: $bg-color-card;
+    border-color: $border-color-btn;
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(1.5);
+}
+
+
+
+
+
+

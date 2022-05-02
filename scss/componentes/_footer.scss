@@ -1,0 +1,58 @@
+@import "../base/variables";
+@import "../base/listas";
+
+/*Nestin o Anidamiento */
+
+.footer-container {
+    background-color: $bg-color-header-footer;
+    border-top: 1.5px dashed #433451;
+}
+
+.container-fluid {
+    display: inline-block;
+}
+
+.logo {
+    @extend %flexbox;
+}
+
+.img-fluid .img {
+    width: 20%;
+}
+
+.Media {
+    width: 80%;
+    @extend %flexbox;
+}
+
+.Inst a img {
+    width: 20%;
+}
+
+.Faceb a img {
+    width: 20%;
+}
+
+.Linkd a img {
+    width: 20%;
+}
+
+.Casa a img {
+    width: 20%;
+}
+
+.Wsp a  {
+    position: fixed;
+    bottom: 10px;
+    padding-right: 10px;
+}
+
+.Wsp img {
+    width: 20%;
+}
+
+@media screen and (max-width: 400px) {
+   body {
+    width: auto;
+} 
+}

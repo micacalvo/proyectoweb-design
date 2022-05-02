@@ -1,0 +1,64 @@
+
+@import "../base/listas";
+@import "../base/variables";
+@import "../base/extends";
+
+/*Nestin o Anidamiento */
+
+.Header-container {
+    background-color: $bg-color-header-footer;
+    @extend %flexbox;
+}
+
+.bg-light{
+    --bs-bg-opacity: 0;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: $color-links;
+    font-family: $font-family-links;
+    font-size: nth($sizes-titles, 2);
+    font-weight: nth($weight, 2);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $color-links;
+    font-family: $font-family-links;
+    font-size: nth($sizes-titles, 2);
+    font-weight: nth($weight, 2);
+}
+
+.nav-item {
+    color: $color-links;
+    font-family: $font-family-links;
+    font-size: nth($sizes-titles, 2);
+    font-weight: nth($weight, 2);
+}
+
+.navbar-light .navbar-nav .nav-link.disabled {
+    color: $color-links;
+    font-family: $font-family-links;
+    font-size: nth($sizes-titles, 2);
+    font-weight: nth($weight, 2);
+}
+
+.navbar-light .navbar-brand {
+    color: $color-links;
+    font-family: $font-family-links;
+    font-size: nth($sizes-titles, 2);
+    font-weight: nth($weight, 2);
+}
+
+.navbar-light .navbar-toggler {
+    color: $color-links; 
+    border-color: $border-color-toggler;
+}
+
+
+
+
+
+
+
+
+

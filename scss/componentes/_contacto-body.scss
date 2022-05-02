@@ -1,0 +1,62 @@
+@import "../base/extends";
+@import "../base/listas";
+@import "../base/variables";
+
+.Contact-container {
+    background-color: $color-sectiona;
+    border-top: $border-top;
+    padding-top: $padding-top;    
+}
+
+
+h1 h2 {
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+}
+
+.Grid.contact {
+    @extend %flexbox;
+}
+
+.row {
+    @extend %flexbox;
+}
+
+.form-label {
+    font-family: $font-family-titles;
+    font-size: nth($sizes-titles, 2);
+    font-weight: nth($weight, 1);
+    color: $color-h1;
+    text-align: center;
+    padding-top: $padding-top;
+    @extend %flexbox;
+}
+
+
+.placeholder {
+    font-family: $font-text;
+    font-size: nth($sizes-titles, 3);
+    font-weight: nth($weight, 1);
+    text-align:center;
+}
+
+.col-md-5-enviar  {
+    padding-top: $padding-top;
+    @extend %flexbox;
+}
+
+.col-md-5-comprar {
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+    @extend %flexbox;
+}
+
+
+.Map {
+    background-color: $color-sectionb;
+    padding-top: $padding-top;
+    @extend %flexbox;
+    border-top: $border-top;
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+}

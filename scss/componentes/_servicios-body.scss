@@ -1,0 +1,31 @@
+@import "../base/extends";
+@import "../base/listas";
+@import "../base/variables";
+
+.services-container {
+    background-color: $bg-color-body;
+    border-top: $border-top;
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+}
+
+h1 h2 {
+    @extend %flexbox;
+    text-align: center;
+    padding-bottom: $padding-bottom;
+    padding-top: $padding-top;
+}
+
+.container h2 {
+    font-family: $font-family-titles;
+    font-size: nth($sizes-titles, 1);
+    font-weight: nth($weight, 1);
+    color: $color-h2;
+    
+}
+.container p {
+    font-family: $font-text;
+    font-size: nth($sizes-titles, 3);
+    font-weight: nth($weight, 1);
+    text-align: justify;
+}

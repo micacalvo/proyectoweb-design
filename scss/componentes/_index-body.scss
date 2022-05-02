@@ -1,0 +1,337 @@
+@import "../base/listas";
+@import "../base/variables";
+@import "../base/extends";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Index */
+
+.SectionA {
+    background-color: $color-sectiona;
+    border-top: $border-top;
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+}
+
+.Name {
+    @extend %flexbox; 
+}
+
+h1 {
+    font-size: nth($sizes-titles, 1);
+    font-weight: nth($weight, 3);
+    color: $color-h1;
+    font-family: $font-family-h1;
+    text-align: center;
+    @extend %flexbox;
+}
+
+h2 {
+    font-family: $font-family-titles;
+    font-size: nth($sizes-titles, 2);
+    font-weight: nth($weight, 3);
+    color: $color-h2;
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+    text-align: center;
+    @extend %flexbox;
+}
+
+.container-1 {
+    @extend %flexbox;
+    padding-top: $padding-top;
+}
+
+.image .img-fluid-w-50 {
+    padding-left: $padding-left-2;
+}
+
+.proposal1 {
+   padding-left: $padding-left-2;
+   padding-right: $padding-right-2;
+}
+
+.proposal2 {
+    padding-top: $padding-top;
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+}
+
+h3 {
+    text-align: center;
+    font-family: $font-family-titles;
+    font-size: nth($sizes-titles, 3);
+    font-weight: nth($weight, 2);
+    color: $color-h2
+}
+
+h4 {
+    text-align: center;
+    font-family: $font-family-titles;
+    font-size: nth($sizes-titles, 3);
+    font-weight: nth($weight, 2);
+    color: $color-h2
+}
+
+p {
+    font-family: $font-text;
+    font-size: nth($sizes-titles, 3);
+    font-weight: nth($weight, 1);
+    text-align: justify;
+}
+
+/* @Media */
+
+/* Mobile */
+
+@media screen and (max-width: 400px) {
+    
+    .SectionA {
+        display:block;
+        align-items: center;
+    }
+
+    .Name .img-fluid-w-25 {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+ 
+    .containera .container-1 {
+        display: block;
+        align-items: center;
+    }
+
+    .image {
+        display: flex;
+    }
+
+    .img-fluid-w-50 {
+        width: 50%;
+        padding-bottom: $padding-bottom;
+        padding-left: 0px;
+    }
+}
+
+/* Tablets */
+
+@media screen and (min-width: 401px) and (max-width: 1023px) {
+    
+    .SectionA {
+        display:block;
+        align-items: center;
+    }
+
+    .Name .img-fluid-w-25 {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+ 
+    .containera .container-1 {
+        display: block;
+        align-items: center;
+    }
+    
+    .image {
+        display: flex;
+    }
+
+    .img-fluid-w-50 {
+        width: 50%;
+        padding-bottom: $padding-bottom;
+        padding-left: 0px;
+    }
+}
+
+/* Desktop */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (orientation: landscape) {
+}
+
+/* Fin section A */
+
+/* Section B */
+
+.SectionBb  {
+    background-color: $color-sectionb;
+    padding-bottom: $padding-bottom;
+    @extend %flexbox;
+}
+
+.SectionB {
+    border-top: $border-top;
+    background-color: $color-sectionb;
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+    @extend %flexbox;
+}
+
+.card {
+    width: 100%;
+    background: $bg-color-card;
+    border-radius: $border-radius-card;
+    border-color: $border-color-btn;
+    @extend %flexbox;
+}
+
+.card-img-top {
+    border-radius: $border-radius-card;
+}
+
+.card-title {
+    font-family: $font-family-titles;
+    font-size: nth($sizes-titles, 2);
+    font-weight: nth($weight, 1);
+    color: $color-h2;
+    @extend %flexbox;
+    text-align: center;
+}
+
+.card-text {
+    font-family: $font-family-titles;
+    font-size: nth($sizes-titles, 3);
+    font-weight: nth($weight, 1);
+}
+
+.btn-primary {
+    color: #131d39;
+    background-color: $bg-color-btn;
+    border-radius: $border-radius-btn;
+    border-color: #433451;
+}
+
+.btn-primary:hover {
+    background-color: $bg-color-btn; 
+    border-color: $border-color-btn;
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(1.5);
+}
+
+/* @Media */
+
+/* Mobile */
+
+@media screen and (max-width: 400px) {
+ 
+.SectionB .Tith4 h3 {
+    font-size: nth($sizes-titles, 3);
+    font-weight: nth($weight, 4);
+}
+
+.SectionBb .col-sm {
+    display: flex;
+    justify-content: center;
+    padding-bottom: $padding-bottom;
+}
+
+.card {
+    width: 50%;
+}
+
+.card-body .card-title {
+  font-size: nth($sizes-titles, 2);
+  font-weight: nth($weight, 5);
+  color: $color-h2;
+  display: flex;
+}
+
+.card-text {
+   font-size: nth($sizes-titles, 3);
+   font-weight: nth($weight, 4);
+   text-align: center;
+}
+}
+
+/* Tablets */
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    .SectionB .Tith4 h3 {
+        font-size: nth($sizes-titles, 3);
+        font-weight: nth($weight, 4);
+    }
+    
+    .SectionBb .col-sm {
+        display: flex;
+        justify-content: center;
+        padding-bottom: $padding-bottom;
+    }
+    
+    .card {
+        width: 50%;
+    }
+    
+    .card-body .card-title {
+      font-size: nth($sizes-titles, 2);
+      font-weight: nth($weight, 5);
+      color: $color-h2;
+      display: flex;
+    }
+    
+    .card-text {
+       font-size: nth($sizes-titles, 3);
+       font-weight: nth($weight, 4);
+       text-align: center;
+}  
+}
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+    .SectionB .Tith4 h3 {
+        font-size: nth($sizes-titles, 3);
+        font-weight: nth($weight, 4);
+    }
+    
+    .SectionBb .col-sm {
+        display: flex;
+        justify-content: center;
+        padding-bottom: $padding-bottom;
+    }
+    
+    .card {
+        width: 50%;
+    }
+    
+    .card-body .card-title {
+      font-size: nth($sizes-titles, 2);
+      font-weight: nth($weight, 5);
+      color: $color-h2;
+      display: flex;
+    }
+    
+    .card-text {
+       font-size: nth($sizes-titles, 3);
+       font-weight: nth($weight, 4);
+       text-align: center;
+}
+}
+/* Fin section B */
+
+/* Section C */
+
+.containerb {
+    background-color: $color-sectionc;
+    border-top: $border-top;
+    text-align: justify;
+    padding-bottom: $padding-bottom;
+    padding-top: $padding-top;
+    padding-left: $padding-left-2;
+    padding-right: $padding-right-2;
+}
+
+.Texthome p {
+    font-family: $font-text;
+    font-size: nth($sizes-titles, 3);
+    font-weight: nth($weight, 1);
+}
+
+/* Fin section C */
