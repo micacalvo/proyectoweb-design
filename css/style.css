@@ -2,7 +2,7 @@
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .padre .container .row-cols-2, .card-title, .card, .SectionB, .SectionBb, .container-1, h2, h1, .Name, .Media, .logo, .Header-container {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .padre .container .row-cols-2, .card-title, .card, .SectionB, .SectionBb, .container-1, h2, h1, .Name, .col-12, .row, .logo, .Header-container {
   display: flex;
   justify-content: center;
 }
@@ -71,37 +71,30 @@
 }
 
 .img-fluid .img {
+  width: 10%;
+}
+
+.row {
+  align-items: center;
+}
+
+.col-12 {
+  align-items: center;
+}
+
+.col-12 img {
   width: 20%;
 }
 
-.Media {
-  width: 80%;
+.ico {
+  display: inline-block;
+  overflow: visible;
+  text-align: center;
+  vertical-align: top;
 }
 
-.Inst a img {
-  width: 20%;
-}
-
-.Faceb a img {
-  width: 20%;
-}
-
-.Linkd a img {
-  width: 20%;
-}
-
-.Casa a img {
-  width: 20%;
-}
-
-.Wsp a {
-  position: fixed;
-  bottom: 10px;
-  padding-right: 10px;
-}
-
-.Wsp img {
-  width: 20%;
+.icos .ico .Wsp a img {
+  position: fixed !important;
 }
 
 @media screen and (max-width: 400px) {
@@ -113,7 +106,7 @@
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .padre .container .row-cols-2, .card-title, .card, .SectionB, .SectionBb, .container-1, h2, h1, .Name, .Header-container, .logo, .Media {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .padre .container .row-cols-2, .card-title, .card, .SectionB, .SectionBb, .container-1, h2, h1, .Name, .Header-container, .logo, .row, .col-12 {
   display: flex;
   justify-content: center;
 }
@@ -289,7 +282,7 @@ p {
   font-weight: 500;
 }
 
-.btn-primary {
+.btn-primary a {
   color: #131d39;
   background-color: #41868f;
   border-radius: 35px;
@@ -413,7 +406,7 @@ p {
 }
 
 /* Fin section C */
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .padre .container .row-cols-2, .Header-container, .logo, .Media, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .padre .container .row-cols-2, .Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title {
   display: flex;
   justify-content: center;
 }
@@ -461,17 +454,17 @@ h3 {
 }
 
 .btn-primary a {
-  color: #131d39;
+  border-radius: 35px;
   text-decoration: none;
+  background-color: none;
 }
 
 .btn-primary:hover {
+  background-color: #41868f;
+  border-color: #131d39;
   cursor: pointer;
   transition: all 1s;
   transform: scale(1.5);
-  background-color: #dadada;
-  border-radius: 35px;
-  border-color: #131d39;
 }
 
 /* @Media */
@@ -535,7 +528,7 @@ h3 {
   padding-top: 20px;
 }
 
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .Header-container, .logo, .Media, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .padre .container .row-cols-2, h1 h2, .SectionE-container, .SectionE p, .SectionE a {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .padre .container .row-cols-2, h1 h2, .SectionE-container, .SectionE p, .SectionE a {
   display: flex;
   justify-content: center;
 }
@@ -571,7 +564,7 @@ h1 h2 {
   text-align: justify;
 }
 
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .Header-container, .logo, .Media, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .padre .container .row-cols-2, h1 h2, .SectionE-container, .SectionE p, .SectionE a {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .padre .container .row-cols-2, h1 h2, .SectionE-container, .SectionE p, .SectionE a {
   display: flex;
   justify-content: center;
 }
@@ -661,7 +654,7 @@ h1 h2 {
   transform: scale(1.5);
 }
 
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .Header-container, .logo, .Media, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .padre .container .row-cols-2, h1 h2, .SectionE-container, .SectionE p, .SectionE a, .Row1, .Row2, .Productos, #carouselExampleIndicators .carousel-slide, .carousel, .btn {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .padre .container .row-cols-2, h1 h2, .SectionE-container, .SectionE p, .SectionE a, .Row1, .Row2, .Productos, #carouselExampleIndicators .carousel-slide, .carousel, .btn {
   display: flex;
   justify-content: center;
 }
@@ -718,7 +711,7 @@ h1 h2 {
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.Header-container, .logo, .Media, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .padre .container .row-cols-2, h1 h2, .SectionE-container, .SectionE p, .SectionE a, .Row1, .Row2, .Productos, #carouselExampleIndicators .carousel-slide, .carousel, .btn, .Grid.contact, .row, .form-label, .col-md-5-enviar, .col-md-5-comprar, .Map {
+.Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .padre .container .row-cols-2, h1 h2, .SectionE-container, .SectionE p, .SectionE a, .Row1, .Row2, .Productos, #carouselExampleIndicators .carousel-slide, .carousel, .btn, .Grid.contact, .form-label, .col-md-5-enviar, .col-md-5-comprar, .Map {
   display: flex;
   justify-content: center;
 }

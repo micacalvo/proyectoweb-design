@@ -43,21 +43,19 @@ h3 {
     text-align: center;
 }
 
-
 .btn-primary a {
-    color: $color-h2;
+    border-radius: $border-radius-btn;
     text-decoration: none;
+    background-color: none;
 }
 
 .btn-primary:hover {
+    background-color: $bg-color-btn; 
+    border-color: $border-color-btn;
     cursor: pointer;
     transition: all 1s;
     transform: scale(1.5);
-    background-color: $bg-color-card;
-    border-radius: $border-radius-btn;
-    border-color: $border-color-btn;
 }
-
 
 /* @Media */
 

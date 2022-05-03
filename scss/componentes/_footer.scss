@@ -17,39 +17,35 @@
 }
 
 .img-fluid .img {
-    width: 20%;
+    width: 10%;
 }
 
-.Media {
-    width: 80%;
+.row {
     @extend %flexbox;
+    align-items: center; 
 }
 
-.Inst a img {
+.col-12 {
+    @extend %flexbox;
+    align-items: center;
+}
+
+.col-12 img {
     width: 20%;
 }
 
-.Faceb a img {
-    width: 20%;
+ .ico {
+    display: inline-block;
+    overflow: visible;
+    text-align: center;
+    vertical-align: top;
 }
 
-.Linkd a img {
-    width: 20%;
+.icos .ico .Wsp a img {
+    position: fixed !important;
 }
 
-.Casa a img {
-    width: 20%;
-}
 
-.Wsp a  {
-    position: fixed;
-    bottom: 10px;
-    padding-right: 10px;
-}
-
-.Wsp img {
-    width: 20%;
-}
 
 @media screen and (max-width: 400px) {
    body {
