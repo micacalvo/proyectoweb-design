@@ -2,7 +2,7 @@
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .padre .container .row-cols-2, .card-title, .card, .SectionB, .SectionBb, .container-1, h2, h1, .Name, .col-12, .row, .logo, .Header-container {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, h2, h1, .Name, .col-12, .row, .logo, .Header-container {
   display: flex;
   justify-content: center;
 }
@@ -98,15 +98,40 @@
 }
 
 @media screen and (max-width: 400px) {
-  body {
-    width: auto;
+  .logo .img-fluid {
+    width: 40%;
+    align-items: center;
+  }
+
+  .container-fluid {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 401px) and (min-width: 600px) {
+  .logo .img-fluid {
+    width: 40%;
+    align-items: center;
+  }
+
+  .container-fluid {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 1023px) {
+  .logo .img-fluid {
+    width: 40%;
+    align-items: center;
+  }
+
+  .container-fluid {
+    display: inline-block;
   }
 }
 /* Colores */
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .padre .container .row-cols-2, .card-title, .card, .SectionB, .SectionBb, .container-1, h2, h1, .Name, .Header-container, .logo, .row, .col-12 {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, h2, h1, .Name, .Header-container, .logo, .row, .col-12 {
   display: flex;
   justify-content: center;
 }
@@ -194,8 +219,8 @@ p {
   }
 
   .Name .img-fluid-w-25 {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
+    align-items: center;
     width: 50%;
   }
 
@@ -206,12 +231,11 @@ p {
 
   .image {
     display: flex;
+    justify-content: center;
   }
 
   .img-fluid-w-50 {
     width: 50%;
-    padding-bottom: 20px;
-    padding-left: 0px;
   }
 }
 /* Tablets */
@@ -222,8 +246,8 @@ p {
   }
 
   .Name .img-fluid-w-25 {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
+    align-items: center;
     width: 50%;
   }
 
@@ -234,12 +258,11 @@ p {
 
   .image {
     display: flex;
+    justify-content: center;
   }
 
   .img-fluid-w-50 {
     width: 50%;
-    padding-bottom: 20px;
-    padding-left: 0px;
   }
 }
 /* Desktop */
@@ -258,7 +281,7 @@ p {
 }
 
 .card {
-  width: 100%;
+  margin: 0px 20px;
   background: #dadada;
   border-radius: 20px;
   border-color: #131d39;
@@ -299,25 +322,40 @@ p {
 
 /* @Media */
 /* Mobile */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 575px) {
   .SectionB .Tith4 h3 {
-    font-size: medium;
+    font-size: small;
     font-weight: 300;
   }
 
-  .SectionBb .col-sm {
-    display: flex;
-    justify-content: center;
+  .SectionBb .container-fluid .row {
+    display: block;
     padding-bottom: 20px;
   }
 
-  .card {
-    width: 50%;
+  .col-xs-12 .col-sm-12 .col-md-4 .col-lg-4 {
+    display: block;
+  }
+
+  .col-xs-12 {
+    padding-bottom: 20px;
+  }
+
+  .col-sm-12 {
+    padding-bottom: 20px;
+  }
+
+  .col-md-4 {
+    padding-bottom: 20px;
+  }
+
+  .col-lg-4 {
+    padding-bottom: 20px;
   }
 
   .card-body .card-title {
-    font-size: x-large;
-    font-weight: 50;
+    font-size: medium;
+    font-weight: 300;
     color: #131d39;
     display: flex;
   }
@@ -329,25 +367,40 @@ p {
   }
 }
 /* Tablets */
-@media screen and (min-width: 401px) and (max-width: 600px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
   .SectionB .Tith4 h3 {
-    font-size: medium;
+    font-size: small;
     font-weight: 300;
   }
 
-  .SectionBb .col-sm {
-    display: flex;
-    justify-content: center;
+  .SectionBb {
+    display: block;
     padding-bottom: 20px;
   }
 
-  .card {
-    width: 50%;
+  .col-xs-12 .col-sm-12 .col-md-4 .col-lg-4 {
+    display: block;
+  }
+
+  .col-xs-12 {
+    padding-bottom: 20px;
+  }
+
+  .col-sm-12 {
+    padding-bottom: 20px;
+  }
+
+  .col-md-4 {
+    padding-bottom: 20px;
+  }
+
+  .col-lg-4 {
+    padding-bottom: 20px;
   }
 
   .card-body .card-title {
-    font-size: x-large;
-    font-weight: 50;
+    font-size: medium;
+    font-weight: 300;
     color: #131d39;
     display: flex;
   }
@@ -358,20 +411,35 @@ p {
     text-align: center;
   }
 }
-@media screen and (min-width: 601px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .SectionB .Tith4 h3 {
     font-size: medium;
     font-weight: 300;
   }
 
-  .SectionBb .col-sm {
-    display: flex;
-    justify-content: center;
+  .SectionBb {
+    display: block;
     padding-bottom: 20px;
   }
 
-  .card {
-    width: 50%;
+  .col-xs-12 .col-sm-12 .col-md-4 .col-lg-4 {
+    display: block;
+  }
+
+  .col-xs-12 {
+    padding-bottom: 20px;
+  }
+
+  .col-sm-12 {
+    padding-bottom: 20px;
+  }
+
+  .col-md-4 {
+    padding-bottom: 20px;
+  }
+
+  .col-lg-4 {
+    padding-bottom: 20px;
   }
 
   .card-body .card-title {
@@ -406,7 +474,7 @@ p {
 }
 
 /* Fin section C */
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .padre .container .row-cols-2, .Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .container-fluid .row, .Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title {
   display: flex;
   justify-content: center;
 }
@@ -423,7 +491,7 @@ p {
   padding-bottom: 20px;
 }
 
-.padre .container .row-cols-2 {
+.container-fluid .row {
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -459,6 +527,10 @@ h3 {
   background-color: none;
 }
 
+a .btn.btn-primary .w-25 {
+  align-items: center;
+}
+
 .btn-primary:hover {
   background-color: #41868f;
   border-color: #131d39;
@@ -469,13 +541,13 @@ h3 {
 
 /* @Media */
 /* Mobile */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 575px) {
   .Bio-container {
     display: block;
     align-items: center;
   }
 
-  .padre .container .row-cols-2 .img-fluid-w-50 {
+  .container-fluid .row .col img .img-fluid-w-50 {
     display: block;
   }
 
@@ -528,7 +600,7 @@ h3 {
   padding-top: 20px;
 }
 
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .padre .container .row-cols-2, h1 h2, .SectionE-container, .SectionE p, .SectionE a {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE p, .SectionE a {
   display: flex;
   justify-content: center;
 }
@@ -564,7 +636,7 @@ h1 h2 {
   text-align: justify;
 }
 
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .padre .container .row-cols-2, h1 h2, .SectionE-container, .SectionE p, .SectionE a {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE p, .SectionE a {
   display: flex;
   justify-content: center;
 }
@@ -654,7 +726,7 @@ h1 h2 {
   transform: scale(1.5);
 }
 
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .padre .container .row-cols-2, h1 h2, .SectionE-container, .SectionE p, .SectionE a, .Row1, .Row2, .Productos, #carouselExampleIndicators .carousel-slide, .carousel, .btn {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE p, .SectionE a, .Row1, .Row2, .Productos, #carouselExampleIndicators .carousel-slide, .carousel, .btn {
   display: flex;
   justify-content: center;
 }
@@ -711,7 +783,7 @@ h1 h2 {
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .padre .container .row-cols-2, h1 h2, .SectionE-container, .SectionE p, .SectionE a, .Row1, .Row2, .Productos, #carouselExampleIndicators .carousel-slide, .carousel, .btn, .Grid.contact, .form-label, .col-md-5-enviar, .col-md-5-comprar, .Map {
+.Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE p, .SectionE a, .Row1, .Row2, .Productos, #carouselExampleIndicators .carousel-slide, .carousel, .btn, .Grid.contact, .form-label, .col-md-5-enviar, .col-md-5-comprar, .Map {
   display: flex;
   justify-content: center;
 }

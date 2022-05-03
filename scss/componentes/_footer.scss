@@ -46,9 +46,44 @@
 }
 
 
-
 @media screen and (max-width: 400px) {
-   body {
-    width: auto;
-} 
+
+.logo .img-fluid {
+    width: 40%;
+    align-items: center;
+}
+
+.container-fluid {
+    display: inline-block;
+}
+}
+
+@media screen and (max-width: 401px) and (min-width: 600px) {
+    
+    .logo .img-fluid {
+        width: 40%;
+        align-items: center;
+    }
+    
+    .container-fluid {
+        display: inline-block;
+    } 
+}
+
+@media screen and (min-width: 401px) and (max-width: 1023px) {
+    .logo .img-fluid {
+        width: 40%;
+        align-items: center;
+    }
+    
+    .container-fluid {
+        display: inline-block;
+    } 
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (orientation: landscape) {
 }

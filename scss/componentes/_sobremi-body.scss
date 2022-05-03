@@ -11,7 +11,7 @@
     padding-bottom: $padding-bottom;
 }
 
-.padre .container .row-cols-2 {
+.container-fluid .row  {
     @extend %flexbox;
     padding-left: $padding-left-2;
     padding-right: $padding-right-2;
@@ -49,6 +49,9 @@ h3 {
     background-color: none;
 }
 
+a .btn.btn-primary .w-25 {
+    align-items: center;
+}
 .btn-primary:hover {
     background-color: $bg-color-btn; 
     border-color: $border-color-btn;
@@ -61,13 +64,13 @@ h3 {
 
 /* Mobile */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 575px) {
     .Bio-container {
         display: block;
         align-items: center;
     }
 
-    .padre .container .row-cols-2 .img-fluid-w-50 {
+    .container-fluid .row .col img .img-fluid-w-50 {
      display: block;
     }
 

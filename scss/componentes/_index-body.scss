@@ -97,9 +97,10 @@ p {
         align-items: center;
     }
 
+    
     .Name .img-fluid-w-25 {
-        display: flex;
-        justify-content: center;
+        display: inline-block;
+        align-items:  center;
         width: 50%;
     }
  
@@ -110,12 +111,11 @@ p {
 
     .image {
         display: flex;
+        justify-content: center;
     }
 
     .img-fluid-w-50 {
         width: 50%;
-        padding-bottom: $padding-bottom;
-        padding-left: 0px;
     }
 }
 
@@ -128,9 +128,10 @@ p {
         align-items: center;
     }
 
+    
     .Name .img-fluid-w-25 {
-        display: flex;
-        justify-content: center;
+        display: inline-block;
+        align-items:  center;
         width: 50%;
     }
  
@@ -138,17 +139,17 @@ p {
         display: block;
         align-items: center;
     }
-    
+
     .image {
         display: flex;
+        justify-content: center;
     }
 
     .img-fluid-w-50 {
         width: 50%;
-        padding-bottom: $padding-bottom;
-        padding-left: 0px;
     }
 }
+    
 
 /* Desktop */
 
@@ -178,7 +179,7 @@ p {
 }
 
 .card {
-    width: 100%;
+    margin: 0px 20px;
     background: $bg-color-card;
     border-radius: $border-radius-card;
     border-color: $border-color-btn;
@@ -223,26 +224,41 @@ p {
 
 /* Mobile */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 575px) {
  
 .SectionB .Tith4 h3 {
-    font-size: nth($sizes-titles, 3);
+    font-size: nth($sizes-titles, 4);
     font-weight: nth($weight, 4);
 }
 
-.SectionBb .col-sm {
-    display: flex;
-    justify-content: center;
+.SectionBb .container-fluid .row {
+    display: block;
     padding-bottom: $padding-bottom;
 }
 
-.card {
-    width: 50%;
+.col-xs-12 .col-sm-12 .col-md-4 .col-lg-4 {
+    display: block;
+}
+
+.col-xs-12 {
+    padding-bottom: $padding-bottom;
+}
+
+.col-sm-12 {
+    padding-bottom: $padding-bottom;
+}
+
+.col-md-4 {
+    padding-bottom: $padding-bottom;
+}
+
+.col-lg-4 {
+    padding-bottom: $padding-bottom;
 }
 
 .card-body .card-title {
-  font-size: nth($sizes-titles, 2);
-  font-weight: nth($weight, 5);
+  font-size: nth($sizes-titles, 3);
+  font-weight: nth($weight, 4);
   color: $color-h2;
   display: flex;
 }
@@ -256,20 +272,82 @@ p {
 
 /* Tablets */
 
-@media screen and (min-width: 401px) and (max-width: 600px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    
+    .SectionB .Tith4 h3 {
+        font-size: nth($sizes-titles, 4);
+        font-weight: nth($weight, 4);
+    }
+    
+    .SectionBb  {
+        display: block;
+        padding-bottom: $padding-bottom;
+    }
+    
+    .col-xs-12 .col-sm-12 .col-md-4 .col-lg-4 {
+        display: block;
+    }
+
+    .col-xs-12 {
+        padding-bottom: $padding-bottom;
+    }
+    
+    .col-sm-12 {
+        padding-bottom: $padding-bottom;
+    }
+    
+    .col-md-4 {
+        padding-bottom: $padding-bottom;
+    }
+    
+    .col-lg-4 {
+        padding-bottom: $padding-bottom;
+    }
+    
+    .card-body .card-title {
+      font-size: nth($sizes-titles, 3);
+      font-weight: nth($weight, 4);
+      color: $color-h2;
+      display: flex;
+    }
+    
+    .card-text {
+       font-size: nth($sizes-titles, 3);
+       font-weight: nth($weight, 4);
+       text-align: center;
+    }
+    }
+    
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
     .SectionB .Tith4 h3 {
         font-size: nth($sizes-titles, 3);
         font-weight: nth($weight, 4);
     }
     
-    .SectionBb .col-sm {
-        display: flex;
-        justify-content: center;
+    .SectionBb  {
+        display: block;
         padding-bottom: $padding-bottom;
     }
     
-    .card {
-        width: 50%;
+    .col-xs-12 .col-sm-12 .col-md-4 .col-lg-4 {
+        display: block;
+    }
+   
+    .col-xs-12 {
+        padding-bottom: $padding-bottom;
+    }
+    
+    .col-sm-12 {
+        padding-bottom: $padding-bottom;
+    }
+    
+    .col-md-4 {
+        padding-bottom: $padding-bottom;
+    }
+    
+    .col-lg-4 {
+        padding-bottom: $padding-bottom;
     }
     
     .card-body .card-title {
@@ -283,38 +361,16 @@ p {
        font-size: nth($sizes-titles, 3);
        font-weight: nth($weight, 4);
        text-align: center;
-}  
+}
 }
 
-@media screen and (min-width: 601px) and (max-width: 1023px) {
-    .SectionB .Tith4 h3 {
-        font-size: nth($sizes-titles, 3);
-        font-weight: nth($weight, 4);
-    }
-    
-    .SectionBb .col-sm {
-        display: flex;
-        justify-content: center;
-        padding-bottom: $padding-bottom;
-    }
-    
-    .card {
-        width: 50%;
-    }
-    
-    .card-body .card-title {
-      font-size: nth($sizes-titles, 2);
-      font-weight: nth($weight, 5);
-      color: $color-h2;
-      display: flex;
-    }
-    
-    .card-text {
-       font-size: nth($sizes-titles, 3);
-       font-weight: nth($weight, 4);
-       text-align: center;
+@media screen and (min-width: 992px) {
+
 }
+
+@media screen and (orientation: landscape) {
 }
+
 /* Fin section B */
 
 /* Section C */
