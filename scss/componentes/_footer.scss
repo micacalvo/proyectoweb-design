@@ -8,22 +8,12 @@
 }
 
 .container-fluid {
-    display: flex;
+    display: inline-block;
 }
 
-.logo .img-fluid .img {
-    width: 10%;
+.imag {
     display: flex;
     justify-content: center;
-}
-
-.wsp a img  {
-    width: 20%
-}
-
-.wsp a {
-    padding-top: $padding-top;
-    position: fixed;
 }
 
 .row {
