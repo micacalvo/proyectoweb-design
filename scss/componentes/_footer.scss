@@ -1,7 +1,6 @@
 @import "../base/variables";
 @import "../base/listas";
 
-/*Nestin o Anidamiento */
 
 .footer-container {
     background-color: $bg-color-header-footer;
@@ -9,15 +8,22 @@
 }
 
 .container-fluid {
-    display: inline-block;
+    display: flex;
 }
 
-.logo {
-    @extend %flexbox;
-}
-
-.img-fluid .img {
+.logo .img-fluid .img {
     width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.wsp a img  {
+    width: 20%
+}
+
+.wsp a {
+    padding-top: $padding-top;
+    position: fixed;
 }
 
 .row {
@@ -34,15 +40,11 @@
     width: 20%;
 }
 
- .ico {
+.ico {
     display: inline-block;
     overflow: visible;
     text-align: center;
     vertical-align: top;
-}
-
-.icos .ico .Wsp a img {
-    position: fixed !important;
 }
 
 

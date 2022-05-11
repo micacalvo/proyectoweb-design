@@ -3,11 +3,28 @@
 @import "../base/variables";
 @import "../base/extends";
 
-/*Nestin o Anidamiento */
-
 .Header-container {
     background-color: $bg-color-header-footer;
-    @extend %flexbox;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: nth($sizes-titles, 1);
+    font-weight: nth($weight, 3);
+    color: $color-h1;
+    font-family: $font-family-h1;
+    text-align: center;
+    padding-top: $padding-top;
+}
+
+h2 {
+    font-family: $font-family-titles;
+    font-size: nth($sizes-titles, 2);
+    font-weight: nth($weight, 3);
+    color: $color-h2;
+    padding-bottom: $padding-bottom;
+    text-align: center;
 }
 
 .bg-light{

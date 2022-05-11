@@ -2,14 +2,33 @@
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, h2, h1, .Name, .col-12, .row, .logo, .Header-container {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name, .col-12, .row {
   display: flex;
   justify-content: center;
 }
 
-/*Nestin o Anidamiento */
 .Header-container {
   background-color: #a09cb0;
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: xx-large;
+  font-weight: 700;
+  color: #41868f;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+
+h2 {
+  font-family: "Fredoka", sans-serif;
+  font-size: x-large;
+  font-weight: 700;
+  color: #131d39;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .bg-light {
@@ -60,18 +79,28 @@
 /* Fonts */
 /* Bordes */
 /* Paddings */
-/*Nestin o Anidamiento */
 .footer-container {
   background-color: #a09cb0;
   border-top: 1.5px dashed #433451;
 }
 
 .container-fluid {
-  display: inline-block;
+  display: flex;
 }
 
-.img-fluid .img {
+.logo .img-fluid .img {
   width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.wsp a img {
+  width: 20%;
+}
+
+.wsp a {
+  padding-top: 20px;
+  position: fixed;
 }
 
 .row {
@@ -91,10 +120,6 @@
   overflow: visible;
   text-align: center;
   vertical-align: top;
-}
-
-.icos .ico .Wsp a img {
-  position: fixed !important;
 }
 
 @media screen and (max-width: 400px) {
@@ -131,7 +156,7 @@
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, h2, h1, .Name, .Header-container, .logo, .row, .col-12 {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name, .row, .col-12 {
   display: flex;
   justify-content: center;
 }
@@ -150,30 +175,16 @@
   padding-bottom: 20px;
 }
 
-h1 {
-  font-size: xx-large;
-  font-weight: 700;
-  color: #41868f;
-  font-family: "Quicksand", sans-serif;
-  text-align: center;
-}
-
-h2 {
-  font-family: "Fredoka", sans-serif;
-  font-size: x-large;
-  font-weight: 700;
-  color: #131d39;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
 .container-1 {
   padding-top: 20px;
 }
 
 .image .img-fluid-w-50 {
   padding-left: 50px;
+  border-radius: 35px;
+  box-shadow: 10px 10px 5px 2px rgba(160, 156, 176, 0.86);
+  -webkit-box-shadow: 10px 10px 5px 2px rgba(160, 156, 176, 0.86);
+  -moz-box-shadow: 10px 10px 5px 2px rgba(160, 156, 176, 0.86);
 }
 
 .proposal1 {
@@ -474,7 +485,7 @@ p {
 }
 
 /* Fin section C */
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .container-fluid .row, .Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .container-fluid .row, .row, .col-12, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title {
   display: flex;
   justify-content: center;
 }
@@ -601,7 +612,7 @@ a {
   padding-top: 20px;
 }
 
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE p, .SectionE a {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .row, .col-12, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE p, .SectionE a {
   display: flex;
   justify-content: center;
 }
@@ -637,7 +648,7 @@ h1 h2 {
   text-align: justify;
 }
 
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE p, .SectionE a {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .row, .col-12, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE p, .SectionE a {
   display: flex;
   justify-content: center;
 }
@@ -727,7 +738,7 @@ h1 h2 {
   transform: scale(1.5);
 }
 
-.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE p, .SectionE a, .Row1, .Row2, .Productos, #carouselExampleIndicators .carousel-slide, .carousel, .btn {
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .row, .col-12, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE p, .SectionE a, .Row1, .Row2, .Productos, #carouselExampleIndicators .carousel-slide, .carousel, .btn {
   display: flex;
   justify-content: center;
 }
@@ -784,7 +795,7 @@ h1 h2 {
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.Header-container, .logo, .row, .col-12, .Name, h1, h2, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE p, .SectionE a, .Row1, .Row2, .Productos, #carouselExampleIndicators .carousel-slide, .carousel, .btn, .Grid.contact, .form-label, .col-md-5-enviar, .col-md-5-comprar, .Map {
+.row, .col-12, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE p, .SectionE a, .Row1, .Row2, .Productos, #carouselExampleIndicators .carousel-slide, .carousel, .btn, .Grid.contact, .form-label, .col-md-5-enviar, .col-md-5-comprar, .Map {
   display: flex;
   justify-content: center;
 }

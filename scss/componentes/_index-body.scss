@@ -19,26 +19,6 @@
 }
 
 .Name {
-    @extend %flexbox; 
-}
-
-h1 {
-    font-size: nth($sizes-titles, 1);
-    font-weight: nth($weight, 3);
-    color: $color-h1;
-    font-family: $font-family-h1;
-    text-align: center;
-    @extend %flexbox;
-}
-
-h2 {
-    font-family: $font-family-titles;
-    font-size: nth($sizes-titles, 2);
-    font-weight: nth($weight, 3);
-    color: $color-h2;
-    padding-top: $padding-top;
-    padding-bottom: $padding-bottom;
-    text-align: center;
     @extend %flexbox;
 }
 
@@ -49,6 +29,10 @@ h2 {
 
 .image .img-fluid-w-50 {
     padding-left: $padding-left-2; 
+    border-radius: $border-radius-img;
+    box-shadow: 10px 10px 5px 2px rgba(160,156,176,0.86);
+-webkit-box-shadow: 10px 10px 5px 2px rgba(160,156,176,0.86);
+-moz-box-shadow: 10px 10px 5px 2px rgba(160,156,176,0.86);
 }
 
 
