@@ -11,9 +11,23 @@
     display: inline-block;
 }
 
-.imag {
+.foot {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.imag {
+    width: 20%
+}
+
+#link img  {
+    width: 20%;
+}
+
+.wsp:hover {
+    transition: all 1s;
+    transform: scale(1.5);
 }
 
 .row {
@@ -28,13 +42,6 @@
 
 .col-12 img {
     width: 20%;
-}
-
-.ico {
-    display: inline-block;
-    overflow: visible;
-    text-align: center;
-    vertical-align: top;
 }
 
 
