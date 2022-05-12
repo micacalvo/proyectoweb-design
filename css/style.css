@@ -88,18 +88,13 @@ h2 {
   display: inline-block;
 }
 
-.foot {
-  width: 100%;
+.logo .img-fluid {
+  width: 20%;
+}
+
+.logo {
   display: flex;
-  justify-content: space-around;
-}
-
-.imag {
-  width: 20%;
-}
-
-#link img {
-  width: 20%;
+  justify-content: center;
 }
 
 .wsp:hover {
@@ -174,14 +169,15 @@ h2 {
 
 .container-1 {
   padding-top: 20px;
+  padding-left: 20px;
 }
 
-.image .img-fluid-w-50 {
-  padding-left: 50px;
-  border-radius: 35px;
-  box-shadow: 10px 10px 5px 2px rgba(160, 156, 176, 0.86);
-  -webkit-box-shadow: 10px 10px 5px 2px rgba(160, 156, 176, 0.86);
-  -moz-box-shadow: 10px 10px 5px 2px rgba(160, 156, 176, 0.86);
+.image .img-fluid-w-75 {
+  border: 2px solid #433451;
+  border-radius: 80px 30px;
+  box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
+  -webkit-box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
+  -moz-box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
 }
 
 .proposal1 {
