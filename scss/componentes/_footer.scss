@@ -1,6 +1,6 @@
 @import "../base/variables";
 @import "../base/listas";
-
+@import "../base/extends";
 
 .footer-container {
     background-color: $bg-color-header-footer;
@@ -39,45 +39,55 @@
     width: 20%;
 }
 
+/* @Media Footer */
+
+/* Mobile */
 
 @media screen and (max-width: 400px) {
 
-.logo .img-fluid {
-    width: 40%;
-    align-items: center;
-}
-
+.footer-container {    
+    
 .container-fluid {
-    display: inline-block;
+    display: flex;
 }
-}
-
-@media screen and (max-width: 401px) and (min-width: 600px) {
     
-    .logo .img-fluid {
-        width: 40%;
+.wsp:hover {
+    transition: all 1s;
+    transform: scale(1.5);
+    }
+    
+.row {
+    display: flex; 
+    align-items: center; 
+    }
+    
+.col-12 {
+
         align-items: center;
     }
     
-    .container-fluid {
-        display: inline-block;
-    } 
-}
-
-@media screen and (min-width: 401px) and (max-width: 1023px) {
-    .logo .img-fluid {
-        width: 40%;
-        align-items: center;
+.col-12 img {
+        width: 20%;
+    }
+}    
+}    
+    @media screen and (max-width: 401px) and (min-width: 600px) {
+        
+        .logo .img-fluid {
+            width: 40%;
+            align-items: center;
+        }
+        
+        .container-fluid {
+            display: inline-block;
+        } 
     }
     
-    .container-fluid {
-        display: inline-block;
-    } 
-}
+    @media screen and (max-width: 1024px) {
+    
+    }
+    
+    @media screen and (orientation: landscape) {
+    }
+    
 
-@media screen and (max-width: 1024px) {
-
-}
-
-@media screen and (orientation: landscape) {
-}

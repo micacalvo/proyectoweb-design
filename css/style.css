@@ -72,13 +72,44 @@ h2 {
 
 .navbar-light .navbar-toggler {
   color: #fff;
-  border-color: #db495e;
+  border-color: #5e595a;
 }
 
+/* @Media Header */
+/* Mobile */
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: x-large;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: small;
+    font-weight: 600;
+  }
+}
+/* Tablets */
+@media screen and (min-width: 401px) and (max-width: 1023px) {
+  h1 {
+    font-size: x-large;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: small;
+    font-weight: 600;
+  }
+}
+/* Desktop */
 /* Colores */
 /* Fonts */
 /* Bordes */
 /* Paddings */
+.Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name, .col-12, .row {
+  display: flex;
+  justify-content: center;
+}
+
 .footer-container {
   background-color: #a09cb0;
   border-top: 1.5px dashed #433451;
@@ -114,27 +145,28 @@ h2 {
   width: 20%;
 }
 
+/* @Media Footer */
+/* Mobile */
 @media screen and (max-width: 400px) {
-  .logo .img-fluid {
-    width: 40%;
+  .footer-container .container-fluid {
+    display: flex;
+  }
+  .footer-container .wsp:hover {
+    transition: all 1s;
+    transform: scale(1.5);
+  }
+  .footer-container .row {
+    display: flex;
     align-items: center;
   }
-
-  .container-fluid {
-    display: inline-block;
+  .footer-container .col-12 {
+    align-items: center;
+  }
+  .footer-container .col-12 img {
+    width: 20%;
   }
 }
 @media screen and (max-width: 401px) and (min-width: 600px) {
-  .logo .img-fluid {
-    width: 40%;
-    align-items: center;
-  }
-
-  .container-fluid {
-    display: inline-block;
-  }
-}
-@media screen and (min-width: 401px) and (max-width: 1023px) {
   .logo .img-fluid {
     width: 40%;
     align-items: center;
@@ -186,7 +218,7 @@ h2 {
 }
 
 .proposal2 {
-  padding-top: 20px;
+  padding-top: 30px;
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -199,6 +231,12 @@ h3 {
   color: #131d39;
 }
 
+.underline {
+  border-bottom: 18px solid #FCF6C3;
+  display: inline-block;
+  line-height: 0;
+}
+
 h4 {
   text-align: center;
   font-family: "Fredoka", sans-serif;
@@ -208,68 +246,13 @@ h4 {
 }
 
 p {
+  padding-top: 50px;
   font-family: "Oxygen", sans-serif;
-  font-size: medium;
+  font-size: larger;
   font-weight: 500;
-  text-align: justify;
+  text-align: center;
 }
 
-/* @Media */
-/* Mobile */
-@media screen and (max-width: 400px) {
-  .SectionA {
-    display: block;
-    align-items: center;
-  }
-
-  .Name .img-fluid-w-25 {
-    display: inline-block;
-    align-items: center;
-    width: 50%;
-  }
-
-  .containera .container-1 {
-    display: block;
-    align-items: center;
-  }
-
-  .image {
-    display: flex;
-    justify-content: center;
-  }
-
-  .img-fluid-w-50 {
-    width: 50%;
-  }
-}
-/* Tablets */
-@media screen and (min-width: 401px) and (max-width: 1023px) {
-  .SectionA {
-    display: block;
-    align-items: center;
-  }
-
-  .Name .img-fluid-w-25 {
-    display: inline-block;
-    align-items: center;
-    width: 50%;
-  }
-
-  .containera .container-1 {
-    display: block;
-    align-items: center;
-  }
-
-  .image {
-    display: flex;
-    justify-content: center;
-  }
-
-  .img-fluid-w-50 {
-    width: 50%;
-  }
-}
-/* Desktop */
 /* Fin section A */
 /* Section B */
 .SectionBb {
@@ -286,6 +269,7 @@ p {
 
 .card {
   margin: 0px 20px;
+  height: 723px;
   background: #dadada;
   border-radius: 20px;
   border-color: #131d39;
@@ -297,15 +281,16 @@ p {
 
 .card-title {
   font-family: "Fredoka", sans-serif;
-  font-size: x-large;
+  font-size: xx-large;
   font-weight: 500;
   color: #131d39;
   text-align: center;
 }
 
 .card-text {
+  padding-top: 10px;
   font-family: "Fredoka", sans-serif;
-  font-size: medium;
+  font-size: x-large;
   font-weight: 500;
 }
 
@@ -324,9 +309,74 @@ p {
   transform: scale(1.5);
 }
 
-/* @Media */
+/* Fin section B */
+/* Section C */
+.containerb {
+  background-color: #eae6ca;
+  border-top: 1.8px dashed #433451;
+  text-align: justify;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.Texthome p {
+  font-family: "Oxygen", sans-serif;
+  font-size: larger;
+  font-weight: 500;
+}
+
+/* Fin section C */
+/* @Media Section A */
 /* Mobile */
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 400px) {
+  .SectionA {
+    display: block;
+    align-items: center;
+  }
+
+  .Name .img-fluid-w-25 {
+    display: inline-block;
+    align-items: center;
+    width: 50%;
+  }
+
+  .container-1 .container-2 {
+    display: inline-block;
+    align-items: center;
+  }
+
+  img {
+    display: none;
+  }
+}
+/* Tablets */
+@media screen and (min-width: 401px) and (max-width: 1023px) {
+  .SectionA {
+    display: block;
+    align-items: center;
+  }
+
+  .Name .img-fluid-w-25 {
+    display: inline-block;
+    align-items: center;
+    width: 50%;
+  }
+
+  .container-1 .container-2 {
+    display: inline-block;
+    align-items: center;
+  }
+
+  img {
+    display: none;
+  }
+}
+/* Desktop */
+/* @Media Section B */
+/* Mobile */
+@media screen and (max-width: 400px) {
   .SectionB .Tith4 h3 {
     font-size: small;
     font-weight: 300;
@@ -358,8 +408,8 @@ p {
   }
 
   .card-body .card-title {
-    font-size: medium;
-    font-weight: 300;
+    font-size: x-large;
+    font-weight: 500;
     color: #131d39;
     display: flex;
   }
@@ -369,9 +419,17 @@ p {
     font-weight: 300;
     text-align: center;
   }
+
+  .card-img-top {
+    display: flex;
+  }
+
+  .card {
+    height: 550px;
+  }
 }
 /* Tablets */
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 401px) and (max-width: 1023px) {
   .SectionB .Tith4 h3 {
     font-size: small;
     font-weight: 300;
@@ -403,52 +461,8 @@ p {
   }
 
   .card-body .card-title {
-    font-size: medium;
-    font-weight: 300;
-    color: #131d39;
-    display: flex;
-  }
-
-  .card-text {
-    font-size: medium;
-    font-weight: 300;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .SectionB .Tith4 h3 {
-    font-size: medium;
-    font-weight: 300;
-  }
-
-  .SectionBb {
-    display: block;
-    padding-bottom: 20px;
-  }
-
-  .col-xs-12 .col-sm-12 .col-md-4 .col-lg-4 {
-    display: block;
-  }
-
-  .col-xs-12 {
-    padding-bottom: 20px;
-  }
-
-  .col-sm-12 {
-    padding-bottom: 20px;
-  }
-
-  .col-md-4 {
-    padding-bottom: 20px;
-  }
-
-  .col-lg-4 {
-    padding-bottom: 20px;
-  }
-
-  .card-body .card-title {
     font-size: x-large;
-    font-weight: 50;
+    font-weight: 500;
     color: #131d39;
     display: flex;
   }
@@ -458,26 +472,12 @@ p {
     font-weight: 300;
     text-align: center;
   }
-}
-/* Fin section B */
-/* Section C */
-.containerb {
-  background-color: #eae6ca;
-  border-top: 1.8px dashed #433451;
-  text-align: justify;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
 
-.Texthome p {
-  font-family: "Oxygen", sans-serif;
-  font-size: medium;
-  font-weight: 500;
+  .card-img-top {
+    display: flex;
+  }
 }
-
-/* Fin section C */
+/* Desktop*/
 .Map, .col-md-5-comprar, .col-md-5-enviar, .form-label, .Grid.contact, .btn, .carousel, #carouselExampleIndicators .carousel-slide, .Productos, .Row2, .Row1, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .container-fluid .row, .row, .col-12, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title {
   display: flex;
   justify-content: center;
@@ -525,15 +525,15 @@ h3 {
   text-align: center;
 }
 
-.btn-primary a {
-  border-radius: 35px;
-  text-decoration: none;
-  background-color: none;
-}
-
-a {
+.width {
+  align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.btn .btn-primary a {
+  border-radius: 35px;
+  text-decoration: none;
 }
 
 .btn-primary:hover {

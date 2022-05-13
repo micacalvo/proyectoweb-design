@@ -71,7 +71,45 @@ h2 {
     border-color: $border-color-toggler;
 }
 
+/* @Media Header */
 
+/* Mobile */
+
+@media screen and (max-width: 400px) {
+    h1  {
+        font-size: nth($sizes-titles, 2);
+        font-weight: nth($weight, 4);
+    }
+
+    h2 {
+        font-size: nth($sizes-titles, 4);
+        font-weight: nth($weight, 2);
+    }
+}
+
+/* Tablets */
+
+@media screen and (min-width: 401px) and (max-width: 1023px) {
+
+    h1  {
+    font-size: nth($sizes-titles, 2);
+    font-weight: nth($weight, 4);
+}
+
+    h2 {
+    font-size: nth($sizes-titles, 4);
+    font-weight: nth($weight, 2);
+}
+}
+
+/* Desktop */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (orientation: landscape) {
+}
 
 
 

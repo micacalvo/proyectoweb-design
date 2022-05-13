@@ -43,15 +43,15 @@ h3 {
     text-align: center;
 }
 
-.btn-primary a {
-    border-radius: $border-radius-btn;
-    text-decoration: none;
-    background-color: none;
-}
-
-a {
+.width {
+    align-items: center;
     display: flex;
     justify-content: center;
+}
+
+.btn .btn-primary a {
+    border-radius: $border-radius-btn;
+    text-decoration: none;
 }
 
 .btn-primary:hover {

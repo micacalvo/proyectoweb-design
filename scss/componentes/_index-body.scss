@@ -43,9 +43,10 @@
 }
 
 .proposal2 {
-    padding-top: $padding-top;
+    padding-top: 30px;
     padding-left: $padding-left;
     padding-right: $padding-right;
+
 }
 
 h3 {
@@ -53,7 +54,13 @@ h3 {
     font-family: $font-family-titles;
     font-size: nth($sizes-titles, 3);
     font-weight: nth($weight, 2);
-    color: $color-h2
+    color: $color-h2;
+}
+
+.underline {
+    border-bottom: 18px solid #FCF6C3;
+    display: inline-block;
+    line-height: 0;
 }
 
 h4 {
@@ -65,84 +72,11 @@ h4 {
 }
 
 p {
+    padding-top: 50px;
     font-family: $font-text;
-    font-size: nth($sizes-titles, 3);
+    font-size: nth($sizes-titles, 5);
     font-weight: nth($weight, 1);
-    text-align: justify;
-}
-
-/* @Media */
-
-/* Mobile */
-
-@media screen and (max-width: 400px) {
-    
-    .SectionA {
-        display:block;
-        align-items: center;
-    }
-
-    
-    .Name .img-fluid-w-25 {
-        display: inline-block;
-        align-items:  center;
-        width: 50%;
-    }
- 
-    .containera .container-1 {
-        display: block;
-        align-items: center;
-    }
-
-    .image {
-        display: flex;
-        justify-content: center;
-    }
-
-    .img-fluid-w-50 {
-        width: 50%;
-    }
-}
-
-/* Tablets */
-
-@media screen and (min-width: 401px) and (max-width: 1023px) {
-    
-    .SectionA {
-        display:block;
-        align-items: center;
-    }
-
-    
-    .Name .img-fluid-w-25 {
-        display: inline-block;
-        align-items:  center;
-        width: 50%;
-    }
- 
-    .containera .container-1 {
-        display: block;
-        align-items: center;
-    }
-
-    .image {
-        display: flex;
-        justify-content: center;
-    }
-
-    .img-fluid-w-50 {
-        width: 50%;
-    }
-}
-    
-
-/* Desktop */
-
-@media screen and (max-width: 1024px) {
-
-}
-
-@media screen and (orientation: landscape) {
+    text-align: center;
 }
 
 /* Fin section A */
@@ -165,6 +99,7 @@ p {
 
 .card {
     margin: 0px 20px;
+    height: 723px;
     background: $bg-color-card;
     border-radius: $border-radius-card;
     border-color: $border-color-btn;
@@ -177,7 +112,7 @@ p {
 
 .card-title {
     font-family: $font-family-titles;
-    font-size: nth($sizes-titles, 2);
+    font-size: nth($sizes-titles, 1);
     font-weight: nth($weight, 1);
     color: $color-h2;
     @extend %flexbox;
@@ -185,8 +120,9 @@ p {
 }
 
 .card-text {
+    padding-top: 10px;
     font-family: $font-family-titles;
-    font-size: nth($sizes-titles, 3);
+    font-size: nth($sizes-titles, 2);
     font-weight: nth($weight, 1);
 }
 
@@ -205,157 +141,6 @@ p {
     transform: scale(1.5);
 }
 
-/* @Media */
-
-/* Mobile */
-
-@media screen and (max-width: 575px) {
- 
-.SectionB .Tith4 h3 {
-    font-size: nth($sizes-titles, 4);
-    font-weight: nth($weight, 4);
-}
-
-.SectionBb .container-fluid .row {
-    display: block;
-    padding-bottom: $padding-bottom;
-}
-
-.col-xs-12 .col-sm-12 .col-md-4 .col-lg-4 {
-    display: block;
-}
-
-.col-xs-12 {
-    padding-bottom: $padding-bottom;
-}
-
-.col-sm-12 {
-    padding-bottom: $padding-bottom;
-}
-
-.col-md-4 {
-    padding-bottom: $padding-bottom;
-}
-
-.col-lg-4 {
-    padding-bottom: $padding-bottom;
-}
-
-.card-body .card-title {
-  font-size: nth($sizes-titles, 3);
-  font-weight: nth($weight, 4);
-  color: $color-h2;
-  display: flex;
-}
-
-.card-text {
-   font-size: nth($sizes-titles, 3);
-   font-weight: nth($weight, 4);
-   text-align: center;
-}
-}
-
-/* Tablets */
-
-@media screen and (min-width: 576px) and (max-width: 767px) {
-    
-    .SectionB .Tith4 h3 {
-        font-size: nth($sizes-titles, 4);
-        font-weight: nth($weight, 4);
-    }
-    
-    .SectionBb  {
-        display: block;
-        padding-bottom: $padding-bottom;
-    }
-    
-    .col-xs-12 .col-sm-12 .col-md-4 .col-lg-4 {
-        display: block;
-    }
-
-    .col-xs-12 {
-        padding-bottom: $padding-bottom;
-    }
-    
-    .col-sm-12 {
-        padding-bottom: $padding-bottom;
-    }
-    
-    .col-md-4 {
-        padding-bottom: $padding-bottom;
-    }
-    
-    .col-lg-4 {
-        padding-bottom: $padding-bottom;
-    }
-    
-    .card-body .card-title {
-      font-size: nth($sizes-titles, 3);
-      font-weight: nth($weight, 4);
-      color: $color-h2;
-      display: flex;
-    }
-    
-    .card-text {
-       font-size: nth($sizes-titles, 3);
-       font-weight: nth($weight, 4);
-       text-align: center;
-    }
-    }
-    
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    
-    .SectionB .Tith4 h3 {
-        font-size: nth($sizes-titles, 3);
-        font-weight: nth($weight, 4);
-    }
-    
-    .SectionBb  {
-        display: block;
-        padding-bottom: $padding-bottom;
-    }
-    
-    .col-xs-12 .col-sm-12 .col-md-4 .col-lg-4 {
-        display: block;
-    }
-   
-    .col-xs-12 {
-        padding-bottom: $padding-bottom;
-    }
-    
-    .col-sm-12 {
-        padding-bottom: $padding-bottom;
-    }
-    
-    .col-md-4 {
-        padding-bottom: $padding-bottom;
-    }
-    
-    .col-lg-4 {
-        padding-bottom: $padding-bottom;
-    }
-    
-    .card-body .card-title {
-      font-size: nth($sizes-titles, 2);
-      font-weight: nth($weight, 5);
-      color: $color-h2;
-      display: flex;
-    }
-    
-    .card-text {
-       font-size: nth($sizes-titles, 3);
-       font-weight: nth($weight, 4);
-       text-align: center;
-}
-}
-
-@media screen and (min-width: 992px) {
-
-}
-
-@media screen and (orientation: landscape) {
-}
-
 /* Fin section B */
 
 /* Section C */
@@ -372,9 +157,186 @@ p {
 
 .Texthome p {
     font-family: $font-text;
-    font-size: nth($sizes-titles, 3);
+    font-size: nth($sizes-titles, 5);
     font-weight: nth($weight, 1);
 }
 
-
 /* Fin section C */
+
+/* @Media Section A */
+
+/* Mobile */
+
+@media screen and (max-width: 400px) {
+    
+.SectionA {
+    display:block;
+    align-items: center;
+}
+
+    
+.Name .img-fluid-w-25 {
+    display: inline-block;
+    align-items: center;
+    width: 50%;
+}
+ 
+.container-1 .container-2 {
+    display: inline-block;
+    align-items: center;
+}
+
+img {
+    display: none;
+}
+}
+
+/* Tablets */
+
+@media screen and (min-width: 401px) and (max-width: 1023px) {
+    
+.SectionA {
+    display:block;
+    align-items: center;
+}
+    
+.Name .img-fluid-w-25 {
+    display: inline-block;
+    align-items:  center;
+    width: 50%;
+}
+
+.container-1 .container-2 {
+    display: inline-block;
+    align-items: center;
+}
+
+img {
+    display: none;
+}
+}
+    
+/* Desktop */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (orientation: landscape) {
+}
+
+/* @Media Section B */
+
+/* Mobile */
+
+@media screen and (max-width: 400px) {
+ 
+.SectionB .Tith4 h3 {
+    font-size: nth($sizes-titles, 4);
+    font-weight: nth($weight, 4);
+}
+        
+.SectionBb .container-fluid .row {
+    display: block;
+    padding-bottom: $padding-bottom;
+}
+        
+.col-xs-12 .col-sm-12 .col-md-4 .col-lg-4 {
+    display: block;
+}
+        
+.col-xs-12 {
+    padding-bottom: $padding-bottom;
+}
+        
+.col-sm-12 {
+    padding-bottom: $padding-bottom;
+}
+        
+.col-md-4 {
+    padding-bottom: $padding-bottom;
+}
+        
+.col-lg-4 {
+    padding-bottom: $padding-bottom;
+}
+        
+.card-body .card-title {
+    font-size: nth($sizes-titles, 2);
+    font-weight: nth($weight, 1);
+    color: $color-h2;
+    display: flex;
+}
+        
+.card-text {
+    font-size: nth($sizes-titles, 3);
+    font-weight: nth($weight, 4);
+    text-align: center;
+}
+.card-img-top {
+    display: flex;
+}
+
+.card {
+    height: 550px;
+}
+}
+
+/* Tablets */
+
+@media screen and (min-width: 401px) and (max-width: 1023px) {
+    
+.SectionB .Tith4 h3 {
+    font-size: nth($sizes-titles, 4);
+    font-weight: nth($weight, 4);
+}
+    
+.SectionBb  {
+    display: block;
+    padding-bottom: $padding-bottom;
+}
+    
+.col-xs-12 .col-sm-12 .col-md-4 .col-lg-4 {
+    display: block;
+}
+
+.col-xs-12 {
+    padding-bottom: $padding-bottom;
+}
+    
+.col-sm-12 {
+    padding-bottom: $padding-bottom;
+}
+    
+.col-md-4 {
+    padding-bottom: $padding-bottom;
+}
+    
+.col-lg-4 {
+    padding-bottom: $padding-bottom;
+}
+    
+.card-body .card-title {
+    font-size: nth($sizes-titles, 2);
+    font-weight: nth($weight, 1);
+    color: $color-h2;
+    display: flex;
+}
+        
+.card-text {
+    font-size: nth($sizes-titles, 3);
+    font-weight: nth($weight, 4);
+    text-align: center;
+}
+.card-img-top {
+    display: flex;
+}
+
+}
+  /* Desktop*/
+
+@media screen and (min-width: 1024px) {
+
+}
+@media screen and (orientation: landscape) {
+}
