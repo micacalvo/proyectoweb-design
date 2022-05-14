@@ -16,26 +16,19 @@ h1 h2 {
 
 .Row1 {
  @extend %flexbox;
+ margin: 0 20px;
 }
 
-.Titles3 {
-    padding-top: $padding-top;
-    padding-bottom: $padding-bottom;
-    padding-left: $padding-left-2;
+.title {
+    padding-top: 50px;
     padding-right: $padding-right-2;
-    font-family: $font-family-titles;
-    font-size: nth($sizes-titles, 1);
-    font-weight: nth($weight, 1);
-    color: $color-h2;
-    text-align: center;
 }
 
 .P1 {
     width: 50%;
     padding-top: $padding-top;
-    padding-right: $padding-right-2;
     font-family: $font-text;
-    font-size: nth($sizes-titles, 3);
+    font-size: nth($sizes-titles, 5);
     font-weight: nth($weight, 1);
     text-align: center;
 }
@@ -44,33 +37,54 @@ h1 h2 {
     padding-top: $padding-top;
     padding-bottom: $padding-bottom;
     font-family: $font-text;
-    font-size: nth($sizes-titles, 3);
+    font-size: nth($sizes-titles, 5);
     font-weight: nth($weight, 1);
     @extend %flexbox;
 }
 
 .Productos {
+   background-image: url(../../Multimedia/Imagenes/fondo.png);
    background-color: $color-sectionb;
    padding-top: $padding-top;
    border-top: $border-top;
    padding-bottom: $padding-bottom;
-   @extend %flexbox;  
 }
 
-#carouselExampleIndicators .carousel-slide {
-    width: 75%;
-    @extend %flexbox; 
-    background-color: #433451
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 25px;
+    }
+    
+.div1 { 
+    grid-area: 1 / 1 / 3 / 2; }
+.div2 { 
+    grid-area: 1 / 3 / 3 / 4; }
+.div3 { 
+    grid-area: 1 / 5 / 3 / 6; }
+.div4 { 
+    grid-area: 2 / 2 / 4 / 3; }
+.div5 { 
+    grid-area: 2 / 4 / 4 / 5; }
+.div6 { 
+    grid-area: 3 / 1 / 5 / 2; }
+.div7 { 
+    grid-area: 3 / 3 / 5 / 4; }
+.div8 { 
+    grid-area: 3 / 5 / 5 / 6; }
+
+.img-fluid {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    border-radius: 80px;
 }
 
-.carousel {
-    @extend %flexbox; 
-}
-
-
-.carousel-item .carousel-item active {
-    transition: all 2s;
-    transform:none;
+.img-fluid:hover {
+    transition: all 1s;
+    transform: scale(1.2);
 }
 
 .SectionF {

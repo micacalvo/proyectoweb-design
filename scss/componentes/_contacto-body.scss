@@ -32,7 +32,6 @@ h1 h2 {
     @extend %flexbox;
 }
 
-
 .placeholder {
     font-family: $font-text;
     font-size: nth($sizes-titles, 3);
@@ -51,12 +50,16 @@ h1 h2 {
     @extend %flexbox;
 }
 
-
-.Map {
+.contact {
     background-color: $color-sectionb;
     padding-top: $padding-top;
     @extend %flexbox;
     border-top: $border-top;
     padding-top: $padding-top;
     padding-bottom: $padding-bottom;
+}
+
+.Map {
+    padding-left: $padding-left-2;
+    padding-right: $padding-right-2;
 }

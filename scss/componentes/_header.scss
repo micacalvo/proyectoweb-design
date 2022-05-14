@@ -3,10 +3,15 @@
 @import "../base/variables";
 @import "../base/extends";
 
+
 .Header-container {
     background-color: $bg-color-header-footer;
     display: flex;
     justify-content: space-around;
+    position: sticky;
+    top: 0;
+    opacity: var(50) ;
+
 }
 
 h1 {

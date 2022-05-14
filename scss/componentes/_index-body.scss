@@ -104,6 +104,7 @@ p {
     border-radius: $border-radius-card;
     border-color: $border-color-btn;
     @extend %flexbox;
+    position:static;
 }
 
 .card-img-top {
