@@ -3,40 +3,39 @@
 @import "../base/extends";
 
 .footer-container {
-    background-color: $bg-color-header-footer;
-    border-top: 1.5px dashed #433451;
+background-color: $bg-color-header-footer;
+text-align: center;
+padding-top: $padding-top;
+padding-bottom: 10px;
 }
 
-.container-fluid {
-    display: inline-block;
+a img {
+    width: 5%;
 }
 
-.logo .img-fluid {
-    width: 20%;   
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
+a  {
+    text-decoration: none;
+    color: none;
 }
 
 .wsp:hover {
     transition: all 1s;
+    transform: scale(2);
+}
+
+.inst:hover {
+    transition: all 1s;
+    transform: scale(2);
+}
+
+.faceb:hover {
+    transition: all 1s;
+    transform: scale(2);
+}
+
+.linkd:hover {
+    transition: all 1s;
     transform: scale(1.5);
-}
-
-.row {
-    @extend %flexbox;
-    align-items: center; 
-}
-
-.col-12 {
-    @extend %flexbox;
-    align-items: center;
-}
-
-.col-12 img {
-    width: 20%;
 }
 
 /* @Media Footer */
