@@ -77,6 +77,7 @@ h2 {
 /* Mobile */
 
 @media screen and (max-width: 400px) {
+
     h1  {
         font-size: nth($sizes-titles, 2);
         font-weight: nth($weight, 4);
@@ -86,6 +87,7 @@ h2 {
         font-size: nth($sizes-titles, 4);
         font-weight: nth($weight, 2);
     }
+
 }
 
 /* Tablets */

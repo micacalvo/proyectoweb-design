@@ -36,42 +36,42 @@ h2 {
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
-  color: #fff;
+  color: rgb(68, 68, 68);
   font-family: "Courier New", Courier, monospace;
   font-size: x-large;
   font-weight: 600;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #fff;
+  color: rgb(68, 68, 68);
   font-family: "Courier New", Courier, monospace;
   font-size: x-large;
   font-weight: 600;
 }
 
 .nav-item {
-  color: #fff;
+  color: rgb(68, 68, 68);
   font-family: "Courier New", Courier, monospace;
   font-size: x-large;
   font-weight: 600;
 }
 
 .navbar-light .navbar-nav .nav-link.disabled {
-  color: #fff;
+  color: rgb(68, 68, 68);
   font-family: "Courier New", Courier, monospace;
   font-size: x-large;
   font-weight: 600;
 }
 
 .navbar-light .navbar-brand {
-  color: #fff;
+  color: rgb(68, 68, 68);
   font-family: "Courier New", Courier, monospace;
   font-size: x-large;
   font-weight: 600;
 }
 
 .navbar-light .navbar-toggler {
-  color: #fff;
+  color: rgb(68, 68, 68);
   border-color: #5e595a;
 }
 
@@ -149,32 +149,37 @@ a {
 /* @Media Footer */
 /* Mobile */
 @media screen and (max-width: 400px) {
-  .footer-container .container-fluid {
-    display: flex;
-  }
-  .footer-container .wsp:hover {
-    transition: all 1s;
-    transform: scale(1.5);
-  }
-  .footer-container .row {
-    display: flex;
-    align-items: center;
-  }
-  .footer-container .col-12 {
-    align-items: center;
-  }
-  .footer-container .col-12 img {
-    width: 20%;
-  }
-}
-@media screen and (max-width: 401px) and (min-width: 600px) {
-  .logo .img-fluid {
-    width: 40%;
-    align-items: center;
+  .footer-container {
+    width: 100%;
+    background-color: #a09cb0;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
 
-  .container-fluid {
-    display: inline-block;
+  a {
+    text-decoration: none;
+    color: none;
+  }
+
+  .wsp:hover {
+    transition: all 1s;
+    transform: scale(2);
+  }
+
+  .inst:hover {
+    transition: all 1s;
+    transform: scale(2);
+  }
+
+  .faceb:hover {
+    transition: all 1s;
+    transform: scale(2);
+  }
+
+  .linkd:hover {
+    transition: all 1s;
+    transform: scale(1.5);
   }
 }
 /* Colores */

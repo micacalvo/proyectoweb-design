@@ -44,49 +44,50 @@ a  {
 
 @media screen and (max-width: 400px) {
 
-.footer-container {    
-    
-.container-fluid {
-    display: flex;
-}
-    
-.wsp:hover {
-    transition: all 1s;
-    transform: scale(1.5);
-    }
-    
-.row {
-    display: flex; 
-    align-items: center; 
-    }
-    
-.col-12 {
-
-        align-items: center;
-    }
-    
-.col-12 img {
-        width: 20%;
-    }
-}    
-}    
-    @media screen and (max-width: 401px) and (min-width: 600px) {
-        
-        .logo .img-fluid {
-            width: 40%;
-            align-items: center;
+    .footer-container {
+        width: 100%;
+        background-color: $bg-color-header-footer;
+        text-align: center;
+        padding-top: $padding-top;
+        padding-bottom: 10px;
         }
         
-        .container-fluid {
-            display: inline-block;
-        } 
-    }
+        a  {
+            text-decoration: none;
+            color: none;
+        }
+        
+        .wsp:hover {
+            transition: all 1s;
+            transform: scale(2);
+        }
+        
+        .inst:hover {
+            transition: all 1s;
+            transform: scale(2);
+        }
+        
+        .faceb:hover {
+            transition: all 1s;
+            transform: scale(2);
+        }
+        
+        .linkd:hover {
+            transition: all 1s;
+            transform: scale(1.5);
+        }
+        
     
-    @media screen and (max-width: 1024px) {
+}    
+@media screen and (max-width: 401px) and (min-width: 600px) {
+                
+}
     
-    }
+@media screen and (max-width: 1024px) {
     
-    @media screen and (orientation: landscape) {
-    }
+}
+    
+@media screen and (orientation: landscape) {
+}
     
 
