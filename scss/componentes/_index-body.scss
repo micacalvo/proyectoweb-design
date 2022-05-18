@@ -36,17 +36,17 @@
 -moz-box-shadow: 10px 10px rgba(160,156,176,0.86);
 }
 
-
-.proposal1 {
+.proposal1 p {
    padding-left: $padding-left-2;
    padding-right: $padding-right-2;
+   font-weight: nth($weight, 2);
 }
 
-.proposal2 {
+.proposal2 p {
     padding-top: 30px;
     padding-left: $padding-left;
     padding-right: $padding-right;
-
+    font-weight: nth($weight, 2);
 }
 
 h3 {
@@ -75,7 +75,7 @@ p {
     padding-top: 50px;
     font-family: $font-text;
     font-size: nth($sizes-titles, 5);
-    font-weight: nth($weight, 1);
+    font-weight: nth($weight, 2);
     text-align: center;
 }
 
@@ -99,12 +99,10 @@ p {
 
 .card {
     margin: 0px 20px;
-    height: 723px;
     background: $bg-color-card;
     border-radius: $border-radius-card;
     border-color: $border-color-btn;
     @extend %flexbox;
-    position:static;
 }
 
 .card-img-top {
@@ -159,7 +157,7 @@ p {
 .Texthome p {
     font-family: $font-text;
     font-size: nth($sizes-titles, 5);
-    font-weight: nth($weight, 1);
+    font-weight: nth($weight, 2);
 }
 
 /* Fin section C */
@@ -175,7 +173,6 @@ p {
     align-items: center;
 }
 
-    
 .Name .img-fluid-w-25 {
     display: inline-block;
     align-items: center;
@@ -183,15 +180,22 @@ p {
 }
  
 .container-1 .container-2 {
-    display: inline-block;
+    display: block;
     align-items: center;
+
 }
 
-img {
+.img-fluid-w-75  {
     display: none;
 }
-}
 
+.underline {
+ padding: 0 10px;
+ display: inline;
+ border-bottom: 10px solid #FCF6C3;
+ line-height: 0;
+}
+}
 /* Tablets */
 
 @media screen and (min-width: 401px) and (max-width: 1023px) {
@@ -208,12 +212,19 @@ img {
 }
 
 .container-1 .container-2 {
-    display: inline-block;
+    display: block;
     align-items: center;
 }
 
 img {
     display: none;
+}
+
+.underline {
+    padding: 0 10px;
+    display: inline;
+    border-bottom: 10px solid #FCF6C3;
+    line-height: 0;
 }
 }
     
@@ -277,10 +288,6 @@ img {
 .card-img-top {
     display: flex;
 }
-
-.card {
-    height: 550px;
-}
 }
 
 /* Tablets */
@@ -332,7 +339,6 @@ img {
 .card-img-top {
     display: flex;
 }
-
 }
   /* Desktop*/
 

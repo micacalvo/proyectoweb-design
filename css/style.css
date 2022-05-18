@@ -143,43 +143,20 @@ a {
 
 .linkd:hover {
   transition: all 1s;
-  transform: scale(1.5);
+  transform: scale(2);
 }
 
 /* @Media Footer */
 /* Mobile */
 @media screen and (max-width: 400px) {
-  .footer-container {
-    width: 100%;
-    background-color: #a09cb0;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
+  a img {
+    width: 15%;
   }
-
-  a {
-    text-decoration: none;
-    color: none;
-  }
-
-  .wsp:hover {
-    transition: all 1s;
-    transform: scale(2);
-  }
-
-  .inst:hover {
-    transition: all 1s;
-    transform: scale(2);
-  }
-
-  .faceb:hover {
-    transition: all 1s;
-    transform: scale(2);
-  }
-
-  .linkd:hover {
-    transition: all 1s;
-    transform: scale(1.5);
+}
+/* Tablets */
+@media screen and (min-width: 401px) and (max-width: 1023px) {
+  a img {
+    width: 15%;
   }
 }
 /* Colores */
@@ -218,15 +195,17 @@ a {
   -moz-box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
 }
 
-.proposal1 {
+.proposal1 p {
   padding-left: 50px;
   padding-right: 50px;
+  font-weight: 600;
 }
 
-.proposal2 {
+.proposal2 p {
   padding-top: 30px;
   padding-left: 100px;
   padding-right: 100px;
+  font-weight: 600;
 }
 
 h3 {
@@ -255,7 +234,7 @@ p {
   padding-top: 50px;
   font-family: "Oxygen", sans-serif;
   font-size: larger;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -275,11 +254,9 @@ p {
 
 .card {
   margin: 0px 20px;
-  height: 723px;
   background: #dadada;
   border-radius: 20px;
   border-color: #131d39;
-  position: static;
 }
 
 .card-img-top {
@@ -331,7 +308,7 @@ p {
 .Texthome p {
   font-family: "Oxygen", sans-serif;
   font-size: larger;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Fin section C */
@@ -350,12 +327,19 @@ p {
   }
 
   .container-1 .container-2 {
-    display: inline-block;
+    display: block;
     align-items: center;
   }
 
-  img {
+  .img-fluid-w-75 {
     display: none;
+  }
+
+  .underline {
+    padding: 0 10px;
+    display: inline;
+    border-bottom: 10px solid #FCF6C3;
+    line-height: 0;
   }
 }
 /* Tablets */
@@ -372,12 +356,19 @@ p {
   }
 
   .container-1 .container-2 {
-    display: inline-block;
+    display: block;
     align-items: center;
   }
 
   img {
     display: none;
+  }
+
+  .underline {
+    padding: 0 10px;
+    display: inline;
+    border-bottom: 10px solid #FCF6C3;
+    line-height: 0;
   }
 }
 /* Desktop */
@@ -429,10 +420,6 @@ p {
 
   .card-img-top {
     display: flex;
-  }
-
-  .card {
-    height: 550px;
   }
 }
 /* Tablets */

@@ -35,7 +35,7 @@ a  {
 
 .linkd:hover {
     transition: all 1s;
-    transform: scale(1.5);
+    transform: scale(2);
 }
 
 /* @Media Footer */
@@ -44,45 +44,24 @@ a  {
 
 @media screen and (max-width: 400px) {
 
-    .footer-container {
-        width: 100%;
-        background-color: $bg-color-header-footer;
-        text-align: center;
-        padding-top: $padding-top;
-        padding-bottom: 10px;
-        }
-        
-        a  {
-            text-decoration: none;
-            color: none;
-        }
-        
-        .wsp:hover {
-            transition: all 1s;
-            transform: scale(2);
-        }
-        
-        .inst:hover {
-            transition: all 1s;
-            transform: scale(2);
-        }
-        
-        .faceb:hover {
-            transition: all 1s;
-            transform: scale(2);
-        }
-        
-        .linkd:hover {
-            transition: all 1s;
-            transform: scale(1.5);
-        }
-        
-    
-}    
-@media screen and (max-width: 401px) and (min-width: 600px) {
-                
+
+
+a img {
+    width: 15%;
 }
-    
+}    
+
+/* Tablets */
+@media screen and (min-width: 401px) and (max-width: 1023px) {
+
+        
+a img {
+    width: 15%;
+}
+
+
+}
+
 @media screen and (max-width: 1024px) {
     
 }
