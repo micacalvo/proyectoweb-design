@@ -39,11 +39,15 @@ h1 h2 {
 }
 
 .col-md-5-enviar  {
+    font-family: $font-text;
+    font-size: nth($sizes-titles, 4);
     padding-top: $padding-top;
     @extend %flexbox;
 }
 
 .col-md-5-comprar {
+    font-family: $font-text;
+    font-size: nth($sizes-titles, 4);
     padding-top: $padding-top;
     padding-bottom: $padding-bottom;
     @extend %flexbox;

@@ -17,18 +17,18 @@ h1 h2 {
 .P1 {
     padding-top: $padding-top;
     font-family: $font-text;
-    font-size: nth($sizes-titles, 5);
+    font-size: nth($sizes-titles, 6);
     font-weight: nth($weight, 1);
     text-align: center;
     padding-left: $padding-left-2;
     padding-right: $padding-right-2;
 }
 
-.Row2 .P2 {
+.Row2 .P2  {
     padding-top: $padding-top;
     padding-bottom: $padding-bottom;
     font-family: $font-text;
-    font-size: nth($sizes-titles, 5);
+    font-size: nth($sizes-titles, 6);
     font-weight: nth($weight, 1);
     @extend %flexbox;
     text-align: center;
@@ -94,6 +94,11 @@ h1 h2 {
     border-color: $border-color-btn;
 }
 
+.width .btn-primary a {
+    font-family: $font-text;
+    font-size: nth($sizes-titles, 4);
+}
+
 .btn {
  @extend %flexbox;
 }
@@ -105,6 +110,18 @@ h1 h2 {
     cursor: pointer;
     transition: all 1s;
     transform: scale(1.5);
+}
+
+.si {
+    font-family: $font-text;
+    font-size: nth($sizes-titles, 6);
+    font-weight: nth($weight, 1);
+    text-align: center;
+    padding-bottom: $padding-bottom;
+}
+
+ol li {
+    list-style-type: none;
 }
 
 /* @Mediaq*/

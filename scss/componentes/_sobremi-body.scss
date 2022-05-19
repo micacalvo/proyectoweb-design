@@ -33,7 +33,7 @@ h1 h2 {
 .text  {
     padding-top: 70px;
     font-family: $font-text;
-    font-size: nth($sizes-titles, 3);
+    font-size: nth($sizes-titles, 6);
     font-weight: nth($weight, 1); 
 }
 
@@ -56,6 +56,11 @@ h3 {
 .btn .btn-primary a {
     border-radius: $border-radius-btn;
     text-decoration: none;
+}
+
+.width .btn-primary a {
+    font-family: $font-text;
+    font-size: nth($sizes-titles, 4);
 }
 
 .btn-primary:hover {
@@ -83,8 +88,11 @@ h3 {
 .SectionE p {
     @extend %flexbox;
     text-align: center;
-    font-weight: nth($weight, 1);
     padding-top: $padding-top;
+}
+
+.textt {
+    font-weight: nth($weight, 6);
 }
 
 .SectionE a {

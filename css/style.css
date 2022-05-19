@@ -148,7 +148,7 @@ a {
 }
 
 .fo {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 /* @Media Footer */
@@ -240,7 +240,7 @@ h4 {
 
 p {
   font-family: "Oxygen", sans-serif;
-  font-size: larger;
+  font-size: large;
   font-weight: 500;
   text-align: center;
 }
@@ -272,7 +272,7 @@ p {
 
 .card-title {
   font-family: "Fredoka", sans-serif;
-  font-size: xx-large;
+  font-size: x-large;
   font-weight: 500;
   color: #131d39;
   text-align: center;
@@ -281,11 +281,13 @@ p {
 .card-text {
   padding-top: 10px;
   font-family: "Fredoka", sans-serif;
-  font-size: x-large;
+  font-size: medium;
   font-weight: 300;
 }
 
 .btn-primary a {
+  font-family: "Oxygen", sans-serif;
+  font-size: small;
   color: #131d39;
   background-color: #41868f;
   border-radius: 35px;
@@ -514,7 +516,7 @@ h1 h2 {
 .text {
   padding-top: 70px;
   font-family: "Oxygen", sans-serif;
-  font-size: medium;
+  font-size: large;
   font-weight: 500;
 }
 
@@ -539,6 +541,11 @@ h3 {
   text-decoration: none;
 }
 
+.width .btn-primary a {
+  font-family: "Oxygen", sans-serif;
+  font-size: small;
+}
+
 .btn-primary:hover {
   background-color: #41868f;
   border-color: #131d39;
@@ -561,8 +568,11 @@ h3 {
 
 .SectionE p {
   text-align: center;
-  font-weight: 500;
   padding-top: 20px;
+}
+
+.textt {
+  font-weight: 800;
 }
 
 /* @Media */
@@ -657,7 +667,7 @@ h1 h2 {
   padding-top: 20px;
 }
 
-.container h2 {
+.container h3 {
   font-family: "Fredoka", sans-serif;
   font-size: xx-large;
   font-weight: 500;
@@ -666,7 +676,7 @@ h1 h2 {
 
 .container p {
   font-family: "Oxygen", sans-serif;
-  font-size: medium;
+  font-size: large;
   font-weight: 500;
   text-align: justify;
 }
@@ -694,7 +704,7 @@ h1 h2 {
 .P1 {
   padding-top: 20px;
   font-family: "Oxygen", sans-serif;
-  font-size: larger;
+  font-size: large;
   font-weight: 500;
   text-align: center;
   padding-left: 50px;
@@ -705,7 +715,7 @@ h1 h2 {
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: "Oxygen", sans-serif;
-  font-size: larger;
+  font-size: large;
   font-weight: 500;
   text-align: center;
   padding-left: 50px;
@@ -785,6 +795,11 @@ h1 h2 {
   border-color: #131d39;
 }
 
+.width .btn-primary a {
+  font-family: "Oxygen", sans-serif;
+  font-size: small;
+}
+
 .btn-primary:hover {
   color: #131d39;
   background-color: #dadada;
@@ -792,6 +807,18 @@ h1 h2 {
   cursor: pointer;
   transition: all 1s;
   transform: scale(1.5);
+}
+
+.si {
+  font-family: "Oxygen", sans-serif;
+  font-size: large;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+ol li {
+  list-style-type: none;
 }
 
 /* @Mediaq*/
@@ -859,10 +886,14 @@ h1 h2 {
 }
 
 .col-md-5-enviar {
+  font-family: "Oxygen", sans-serif;
+  font-size: small;
   padding-top: 20px;
 }
 
 .col-md-5-comprar {
+  font-family: "Oxygen", sans-serif;
+  font-size: small;
   padding-top: 20px;
   padding-bottom: 20px;
 }

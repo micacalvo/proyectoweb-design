@@ -74,7 +74,7 @@ h4 {
 
 p {
     font-family: $font-text;
-    font-size: nth($sizes-titles, 5);
+    font-size: nth($sizes-titles, 6);
     font-weight: nth($weight, 1);
     text-align: center;
 }
@@ -111,7 +111,7 @@ p {
 
 .card-title {
     font-family: $font-family-titles;
-    font-size: nth($sizes-titles, 1);
+    font-size: nth($sizes-titles, 2);
     font-weight: nth($weight, 1);
     color: $color-h2;
     @extend %flexbox;
@@ -121,11 +121,13 @@ p {
 .card-text {
     padding-top: 10px;
     font-family: $font-family-titles;
-    font-size: nth($sizes-titles, 2);
+    font-size: nth($sizes-titles, 3);
     font-weight: nth($weight, 4);
 }
 
 .btn-primary a {
+    font-family: $font-text;
+    font-size: nth($sizes-titles, 4);
     color: $color-h2;
     background-color: $bg-color-btn;
     border-radius: $border-radius-btn;
