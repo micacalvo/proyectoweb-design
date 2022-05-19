@@ -22,13 +22,13 @@
     @extend %flexbox;
 }
 
-.container-1 {
+.container-1  {
     @extend %flexbox;
     padding-top: $padding-top;
     padding-left: 20px;
 }
 
-.image .img-fluid-w-75 {
+.img-fluid-w-75{
     border: $border;
     border-radius: 80px 30px;
     box-shadow: 10px 10px rgba(160,156,176,0.86);
@@ -37,16 +37,17 @@
 }
 
 .proposal1 p {
+   padding-top: 50px;
    padding-left: $padding-left-2;
    padding-right: $padding-right-2;
-   font-weight: nth($weight, 2);
+   font-weight: nth($weight, 1);
 }
 
-.proposal2 p {
+.proposal2  {
     padding-top: 30px;
-    padding-left: $padding-left;
-    padding-right: $padding-right;
-    font-weight: nth($weight, 2);
+    padding-left: $padding-left-2;
+    padding-right: $padding-right-2;
+    font-weight: nth($weight, 1);
 }
 
 h3 {
@@ -72,10 +73,9 @@ h4 {
 }
 
 p {
-    padding-top: 50px;
     font-family: $font-text;
     font-size: nth($sizes-titles, 5);
-    font-weight: nth($weight, 2);
+    font-weight: nth($weight, 1);
     text-align: center;
 }
 
@@ -122,7 +122,7 @@ p {
     padding-top: 10px;
     font-family: $font-family-titles;
     font-size: nth($sizes-titles, 2);
-    font-weight: nth($weight, 1);
+    font-weight: nth($weight, 4);
 }
 
 .btn-primary a {
@@ -154,10 +154,8 @@ p {
     padding-right: $padding-right-2;
 }
 
-.Texthome p {
-    font-family: $font-text;
-    font-size: nth($sizes-titles, 5);
-    font-weight: nth($weight, 2);
+.containerb p {
+    font-weight: nth($weight, 1);
 }
 
 /* Fin section C */
@@ -167,34 +165,34 @@ p {
 /* Mobile */
 
 @media screen and (max-width: 400px) {
-    
+
 .SectionA {
     display:block;
     align-items: center;
 }
-
+        
 .Name .img-fluid-w-25 {
     display: inline-block;
-    align-items: center;
+    align-items:  center;
     width: 50%;
 }
- 
+    
 .container-1 .container-2 {
     display: block;
     align-items: center;
-
 }
-
-.img-fluid-w-75  {
+    
+img {
     display: none;
 }
-
+    
 .underline {
- padding: 0 10px;
- display: inline;
- border-bottom: 10px solid #FCF6C3;
- line-height: 0;
+    padding: 0 10px;
+    display: inline;
+    border-bottom: 10px solid #FCF6C3;
+    line-height: 0;
 }
+
 }
 /* Tablets */
 

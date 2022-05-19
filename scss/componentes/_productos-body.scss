@@ -14,36 +14,29 @@ h1 h2 {
     padding-top: $padding-top;
 }
 
-.Row1 {
- @extend %flexbox;
- margin: 0 20px;
-}
-
-.title {
-    padding-top: 50px;
-    padding-right: $padding-right-2;
-}
-
 .P1 {
-    width: 50%;
     padding-top: $padding-top;
     font-family: $font-text;
     font-size: nth($sizes-titles, 5);
     font-weight: nth($weight, 1);
     text-align: center;
+    padding-left: $padding-left-2;
+    padding-right: $padding-right-2;
 }
 
-.Row2 {
+.Row2 .P2 {
     padding-top: $padding-top;
     padding-bottom: $padding-bottom;
     font-family: $font-text;
     font-size: nth($sizes-titles, 5);
     font-weight: nth($weight, 1);
     @extend %flexbox;
+    text-align: center;
+    padding-left: $padding-left-2;
+    padding-right: $padding-right-2;
 }
 
 .Productos {
-   background-image: url(../../Multimedia/Imagenes/fondo.png);
    background-color: $color-sectionb;
    padding-top: $padding-top;
    border-top: $border-top;
@@ -79,7 +72,7 @@ h1 h2 {
     display: flex;
     justify-content: center;
     padding: 0 20px;
-    border-radius: 80px;
+    border-radius: 40px;
 }
 
 .img-fluid:hover {
@@ -114,8 +107,45 @@ h1 h2 {
     transform: scale(1.5);
 }
 
+/* @Mediaq*/
 
+/* Mobile */
 
+@media screen and (max-width: 400px) {
+.parent {
+        display: block;
+        align-items: center;
+}
+
+.img-fluid {
+    padding-bottom: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+}
+
+/* Tablets */
+
+@media screen and (min-width: 401px) and (max-width: 1023px) {
+.parent {
+    display: block;
+    align-items: center;
+}
+
+.img-fluid {
+    padding-bottom: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+}
+
+/* Desktop*/
+
+@media screen and (min-width: 1024px) {
+
+}
+@media screen and (orientation: landscape) {
+}
 
 
 
