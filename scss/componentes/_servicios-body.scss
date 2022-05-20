@@ -27,7 +27,7 @@ h1 h2 {
     font-family: $font-text;
     font-size: nth($sizes-titles, 6);
     font-weight: nth($weight, 1);
-    text-align: center;
+    text-align: justify;
     padding-top: 50px;
 }
 
@@ -45,69 +45,72 @@ h1 h2 {
     padding-top: $padding-top;
 }
 
+.servicee {
+    padding: 0 50px;
+}
 /* @Mediaq */
 
 /* Mobile */
 
 @media screen and (max-width: 400px) {
 
-    .services-container .container-fluid .service-1 {
-        display: block;
-        align-items: center;
-    }
+.services-container .container-fluid .service-1 {
+    display: block;
+    align-items: center;
+}
 
-    .service {
-        padding: 0 10px;;
-    }
+.service {
+    padding: 0 10px;;
+}
     
-    .service p {
-        text-align: justify;
-    }
+.service p {
+    text-align: justify;
+}
 
-    .asesor img {
-        width: 50%;
-        display: block;
-        border: $border;
-        border-radius: 30px 30px;
-        box-shadow: 10px 10px rgba(160,156,176,0.86);
+.asesor img {
+    width: 50%;
+    display: block;
+    border: $border;
+    border-radius: 30px 30px;
+    box-shadow: 10px 10px rgba(160,156,176,0.86);
         -webkit-box-shadow: 10px 10px rgba(160,156,176,0.86);
         -moz-box-shadow: 10px 10px rgba(160,156,176,0.86);
-        align-items: center;
-        margin: 0 100px;
-    }
+    align-items: center;
+    margin: 0 100px;
+}
 }  
 
 /* Tablets */
 
 @media screen and (min-width: 401px) and (max-width: 1023px) {
 
-    .services-container .container-fluid .service-1 {
-        display: block;
-        align-items: center;
+.services-container .container-fluid .service-1 {
+    display: block;
+    align-items: center;
 }
 
-    .service {
-        padding: 0 10px;;
+.service {
+    padding: 0 10px;;
 }
     
-    .service p {
-        text-align: justify;
+.service p {
+    text-align: justify;
 }
 
-    .asesor img {
-        width: 50%;
-        display: block;
-        border: $border;
-        border-radius: 30px 30px;
-        box-shadow: 10px 10px rgba(160,156,176,0.86);
+.asesor img {
+    width: 50%;
+    display: block;
+    border: $border;
+    border-radius: 30px 30px;
+    box-shadow: 10px 10px rgba(160,156,176,0.86);
         -webkit-box-shadow: 10px 10px rgba(160,156,176,0.86);
         -moz-box-shadow: 10px 10px rgba(160,156,176,0.86);
-        align-items: center;
-        margin: auto;
+    align-items: center;
+    margin: auto;
 }
 
-    .asesor {
-        padding-right: 0;
+.asesor {
+    padding-right: 0;
 }
 } 
 

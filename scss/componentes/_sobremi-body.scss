@@ -17,6 +17,7 @@
 }
 
 .img-fluid-w-50 {
+    margin: 0 60px;
     border: $border;
     border-radius: 70px 30px;
     box-shadow: 10px 10px rgba(160,156,176,0.86);
@@ -31,10 +32,14 @@ h1 h2 {
 }
 
 .text  {
-    padding-top: 70px;
     font-family: $font-text;
     font-size: nth($sizes-titles, 6);
     font-weight: nth($weight, 1); 
+}
+
+.tt .text {
+    text-align: justify;
+    padding-top: 50px;
 }
 
 h3 {
@@ -48,6 +53,7 @@ h3 {
 }
 
 .width {
+    padding-top: $padding-top;
     align-items: center;
     display: flex;
     justify-content: center;

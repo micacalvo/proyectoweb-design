@@ -147,8 +147,9 @@ a {
   transform: scale(2);
 }
 
-.fo {
-  padding-top: 15px;
+.fo p {
+  text-align: center;
+  padding-top: 10px;
 }
 
 /* @Media Footer */
@@ -242,7 +243,7 @@ p {
   font-family: "Oxygen", sans-serif;
   font-size: large;
   font-weight: 500;
-  text-align: center;
+  text-align: justify;
 }
 
 /* Fin section A */
@@ -257,6 +258,10 @@ p {
   background-color: #d9d9d9;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.container-fluid .card-text {
+  padding-top: 10px;
 }
 
 .card {
@@ -279,7 +284,6 @@ p {
 }
 
 .card-text {
-  padding-top: 10px;
   font-family: "Fredoka", sans-serif;
   font-size: medium;
   font-weight: 300;
@@ -532,6 +536,7 @@ p {
 }
 
 .img-fluid-w-50 {
+  margin: 0 60px;
   border: 1.5px solid #433451;
   border-radius: 70px 30px;
   box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
@@ -545,10 +550,14 @@ h1 h2 {
 }
 
 .text {
-  padding-top: 70px;
   font-family: "Oxygen", sans-serif;
   font-size: large;
   font-weight: 500;
+}
+
+.tt .text {
+  text-align: justify;
+  padding-top: 50px;
 }
 
 h3 {
@@ -562,6 +571,7 @@ h3 {
 }
 
 .width {
+  padding-top: 20px;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -730,7 +740,7 @@ h1 h2 {
   font-family: "Oxygen", sans-serif;
   font-size: large;
   font-weight: 500;
-  text-align: center;
+  text-align: justify;
   padding-top: 50px;
 }
 
@@ -745,6 +755,10 @@ h1 h2 {
 .asesor {
   padding-right: 50px;
   padding-top: 20px;
+}
+
+.servicee {
+  padding: 0 50px;
 }
 
 /* @Mediaq */
@@ -832,7 +846,7 @@ h1 h2 {
   font-family: "Oxygen", sans-serif;
   font-size: large;
   font-weight: 500;
-  text-align: center;
+  text-align: justify;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -843,7 +857,7 @@ h1 h2 {
   font-family: "Oxygen", sans-serif;
   font-size: large;
   font-weight: 500;
-  text-align: center;
+  text-align: justify;
   padding-left: 50px;
   padding-right: 50px;
 }

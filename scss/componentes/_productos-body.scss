@@ -19,7 +19,7 @@ h1 h2 {
     font-family: $font-text;
     font-size: nth($sizes-titles, 6);
     font-weight: nth($weight, 1);
-    text-align: center;
+    text-align: justify;
     padding-left: $padding-left-2;
     padding-right: $padding-right-2;
 }
@@ -31,7 +31,7 @@ h1 h2 {
     font-size: nth($sizes-titles, 6);
     font-weight: nth($weight, 1);
     @extend %flexbox;
-    text-align: center;
+    text-align: justify;
     padding-left: $padding-left-2;
     padding-right: $padding-right-2;
 }
@@ -49,7 +49,7 @@ h1 h2 {
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 15px;
     grid-row-gap: 25px;
-    }
+}
     
 .div1 { 
     grid-area: 1 / 1 / 3 / 2; }
@@ -130,8 +130,8 @@ ol li {
 
 @media screen and (max-width: 400px) {
 .parent {
-        display: block;
-        align-items: center;
+    display: block;
+    align-items: center;
 }
 
 .img-fluid {
