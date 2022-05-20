@@ -2,7 +2,7 @@
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
+.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
   display: flex;
   justify-content: center;
 }
@@ -105,7 +105,7 @@ h2 {
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
+.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
   display: flex;
   justify-content: center;
 }
@@ -170,7 +170,7 @@ a {
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
+.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
   display: flex;
   justify-content: center;
 }
@@ -338,33 +338,12 @@ p {
     align-items: center;
   }
 
-  img {
-    display: none;
+  p {
+    text-align: justify;
   }
 
-  .underline {
-    padding: 0 10px;
-    display: inline;
-    border-bottom: 10px solid #FCF6C3;
-    line-height: 0;
-  }
-}
-/* Tablets */
-@media screen and (min-width: 401px) and (max-width: 1023px) {
-  .SectionA {
-    display: block;
-    align-items: center;
-  }
-
-  .Name .img-fluid-w-25 {
-    display: inline-block;
-    align-items: center;
-    width: 50%;
-  }
-
-  .container-1 .container-2 {
-    display: block;
-    align-items: center;
+  .proposal1 p {
+    padding: 10px 50px;
   }
 
   img {
@@ -377,11 +356,15 @@ p {
     border-bottom: 10px solid #FCF6C3;
     line-height: 0;
   }
-}
-/* Desktop */
-/* @Media Section B */
-/* Mobile */
-@media screen and (max-width: 400px) {
+
+  .container-fluid .card-text {
+    padding-top: 10px;
+  }
+
+  .fo p {
+    text-align: center;
+  }
+
   .SectionB .Tith4 h3 {
     font-size: small;
     font-weight: 300;
@@ -431,6 +414,53 @@ p {
 }
 /* Tablets */
 @media screen and (min-width: 401px) and (max-width: 1023px) {
+  .SectionA {
+    display: block;
+    align-items: center;
+  }
+
+  .Name .img-fluid-w-25 {
+    display: inline-block;
+    align-items: center;
+    width: 50%;
+  }
+
+  .container-1 .container-2 {
+    display: block;
+    align-items: center;
+  }
+
+  .container-1 .container-2 p {
+    text-align: justify;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .proposal1 p {
+    padding: 10px 50px;
+  }
+
+  img {
+    display: none;
+  }
+
+  .underline {
+    padding: 0 10px;
+    display: inline;
+    border-bottom: 10px solid #FCF6C3;
+    line-height: 0;
+  }
+
+  .container-fluid .card-text {
+    padding-top: 10px;
+  }
+
+  .fo p {
+    text-align: center;
+  }
+
   .SectionB .Tith4 h3 {
     font-size: small;
     font-weight: 300;
@@ -462,6 +492,7 @@ p {
   }
 
   .card-body .card-title {
+    width: auto;
     font-size: x-large;
     font-weight: 500;
     color: #131d39;
@@ -478,8 +509,8 @@ p {
     display: flex;
   }
 }
-/* Desktop*/
-.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .SectionE a, .SectionE p, .SectionE-container, h1 h2, .container-fluid .row, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title {
+/* Desktop */
+.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title {
   display: flex;
   justify-content: center;
 }
@@ -569,6 +600,8 @@ h3 {
 .SectionE p {
   text-align: center;
   padding-top: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .textt {
@@ -587,10 +620,15 @@ h3 {
     display: block;
   }
 
+  .container-fluid .tt p {
+    text-align: justify;
+  }
+
   .img-fluid-w-50 {
+    display: block;
     width: 50%;
     align-items: center;
-    margin: 0 100px;
+    margin: 0 auto;
     padding: 0;
     border: 1.5px solid #433451;
     border-radius: 30px 30px;
@@ -600,15 +638,20 @@ h3 {
   }
 
   .container-fluid .row {
-    padding: 0 10px;
+    padding: 0 30px;
   }
 
   h1 h2 {
     display: block;
   }
 
-  .SectionE p a {
+  .SectionE p {
     display: block;
+  }
+
+  .textt p {
+    display: block;
+    text-align: justify;
   }
 }
 /* Tablets */
@@ -622,10 +665,14 @@ h3 {
     display: block;
   }
 
+  .container-fluid .tt p {
+    text-align: justify;
+  }
+
   .img-fluid-w-50 {
+    display: block;
     width: 50%;
-    display: flex;
-    margin: 0 auto;
+    margin: auto;
     border-radius: 30px 30px;
     box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
     -webkit-box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
@@ -633,19 +680,24 @@ h3 {
   }
 
   .container-fluid .row {
-    padding: 0 10px;
+    padding: 0 30px;
   }
 
   h1 h2 {
     display: block;
   }
 
-  .SectionE p a {
+  .SectionE p {
     display: block;
+  }
+
+  .textt p {
+    display: block;
+    text-align: justify;
   }
 }
 /* Desktop */
-.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE p, .SectionE a {
+.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a {
   display: flex;
   justify-content: center;
 }
@@ -667,21 +719,95 @@ h1 h2 {
   padding-top: 20px;
 }
 
-.container h3 {
+.container-fluid h3 {
   font-family: "Fredoka", sans-serif;
   font-size: xx-large;
   font-weight: 500;
   color: #131d39;
 }
 
-.container p {
+.container-fluid p {
   font-family: "Oxygen", sans-serif;
   font-size: large;
   font-weight: 500;
-  text-align: justify;
+  text-align: center;
+  padding-top: 50px;
 }
 
-.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE p, .SectionE a {
+.service-1 {
+  padding-bottom: 20px;
+}
+
+.service {
+  padding-right: 100px;
+}
+
+.asesor {
+  padding-right: 50px;
+  padding-top: 20px;
+}
+
+/* @Mediaq */
+/* Mobile */
+@media screen and (max-width: 400px) {
+  .services-container .container-fluid .service-1 {
+    display: block;
+    align-items: center;
+  }
+
+  .service {
+    padding: 0 10px;
+  }
+
+  .service p {
+    text-align: justify;
+  }
+
+  .asesor img {
+    width: 50%;
+    display: block;
+    border: 1.5px solid #433451;
+    border-radius: 30px 30px;
+    box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
+    -webkit-box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
+    -moz-box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
+    align-items: center;
+    margin: 0 100px;
+  }
+}
+/* Tablets */
+@media screen and (min-width: 401px) and (max-width: 1023px) {
+  .services-container .container-fluid .service-1 {
+    display: block;
+    align-items: center;
+  }
+
+  .service {
+    padding: 0 10px;
+  }
+
+  .service p {
+    text-align: justify;
+  }
+
+  .asesor img {
+    width: 50%;
+    display: block;
+    border: 1.5px solid #433451;
+    border-radius: 30px 30px;
+    box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
+    -webkit-box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
+    -moz-box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
+    align-items: center;
+    margin: auto;
+  }
+
+  .asesor {
+    padding-right: 0;
+  }
+}
+/* Desktop */
+.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1 {
   display: flex;
   justify-content: center;
 }
@@ -834,6 +960,14 @@ ol li {
     width: 50%;
     margin: 0 auto;
   }
+
+  .P1 {
+    text-align: justify;
+  }
+
+  .Row2 .P2 {
+    text-align: justify;
+  }
 }
 /* Tablets */
 @media screen and (min-width: 401px) and (max-width: 1023px) {
@@ -847,9 +981,17 @@ ol li {
     width: 50%;
     margin: 0 auto;
   }
+
+  .P1 {
+    text-align: justify;
+  }
+
+  .Row2 .P2 {
+    text-align: justify;
+  }
 }
 /* Desktop*/
-.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE p, .SectionE a, .Row2 .P2, .btn {
+.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1, .Row2 .P2, .btn {
   display: flex;
   justify-content: center;
 }
@@ -910,7 +1052,7 @@ h1 h2 {
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE p, .SectionE a, .Row2 .P2, .btn, .Grid.contact, .row, .form-label, .col-md-5-enviar, .col-md-5-comprar, .contact {
+.Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1, .Row2 .P2, .btn, .Grid.contact, .row, .form-label, .col-md-5-enviar, .col-md-5-comprar, .contact {
   display: flex;
   justify-content: center;
 }

@@ -16,16 +16,106 @@ h1 h2 {
     padding-top: $padding-top;
 }
 
-.container h3 {
+.container-fluid h3 {
     font-family: $font-family-titles;
     font-size: nth($sizes-titles, 1);
     font-weight: nth($weight, 1);
     color: $color-h2;
     
 }
-.container p {
+.container-fluid p {
     font-family: $font-text;
     font-size: nth($sizes-titles, 6);
     font-weight: nth($weight, 1);
-    text-align: justify;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.service-1 {
+    @extend %flexbox;
+    padding-bottom: $padding-bottom;
+}
+
+.service {
+    padding-right: $padding-right;
+}
+
+.asesor {
+    padding-right: $padding-right-2;
+    padding-top: $padding-top;
+}
+
+/* @Mediaq */
+
+/* Mobile */
+
+@media screen and (max-width: 400px) {
+
+    .services-container .container-fluid .service-1 {
+        display: block;
+        align-items: center;
+    }
+
+    .service {
+        padding: 0 10px;;
+    }
+    
+    .service p {
+        text-align: justify;
+    }
+
+    .asesor img {
+        width: 50%;
+        display: block;
+        border: $border;
+        border-radius: 30px 30px;
+        box-shadow: 10px 10px rgba(160,156,176,0.86);
+        -webkit-box-shadow: 10px 10px rgba(160,156,176,0.86);
+        -moz-box-shadow: 10px 10px rgba(160,156,176,0.86);
+        align-items: center;
+        margin: 0 100px;
+    }
+}  
+
+/* Tablets */
+
+@media screen and (min-width: 401px) and (max-width: 1023px) {
+
+    .services-container .container-fluid .service-1 {
+        display: block;
+        align-items: center;
+}
+
+    .service {
+        padding: 0 10px;;
+}
+    
+    .service p {
+        text-align: justify;
+}
+
+    .asesor img {
+        width: 50%;
+        display: block;
+        border: $border;
+        border-radius: 30px 30px;
+        box-shadow: 10px 10px rgba(160,156,176,0.86);
+        -webkit-box-shadow: 10px 10px rgba(160,156,176,0.86);
+        -moz-box-shadow: 10px 10px rgba(160,156,176,0.86);
+        align-items: center;
+        margin: auto;
+}
+
+    .asesor {
+        padding-right: 0;
+}
+} 
+
+/* Desktop */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (orientation: landscape) {
 }

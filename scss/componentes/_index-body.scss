@@ -183,7 +183,15 @@ p {
     display: block;
     align-items: center;
 }
-    
+
+p {
+    text-align: justify;
+}
+
+.proposal1 p {
+    padding: 10px 50px;
+}
+
 img {
     display: none;
 }
@@ -195,54 +203,14 @@ img {
     line-height: 0;
 }
 
-}
-/* Tablets */
-
-@media screen and (min-width: 401px) and (max-width: 1023px) {
-    
-.SectionA {
-    display:block;
-    align-items: center;
-}
-    
-.Name .img-fluid-w-25 {
-    display: inline-block;
-    align-items:  center;
-    width: 50%;
+.container-fluid .card-text {
+    padding-top: 10px;
 }
 
-.container-1 .container-2 {
-    display: block;
-    align-items: center;
+.fo p {
+    text-align: center;
 }
 
-img {
-    display: none;
-}
-
-.underline {
-    padding: 0 10px;
-    display: inline;
-    border-bottom: 10px solid #FCF6C3;
-    line-height: 0;
-}
-}
-    
-/* Desktop */
-
-@media screen and (max-width: 1024px) {
-
-}
-
-@media screen and (orientation: landscape) {
-}
-
-/* @Media Section B */
-
-/* Mobile */
-
-@media screen and (max-width: 400px) {
- 
 .SectionB .Tith4 h3 {
     font-size: nth($sizes-titles, 4);
     font-weight: nth($weight, 4);
@@ -294,6 +262,53 @@ img {
 
 @media screen and (min-width: 401px) and (max-width: 1023px) {
     
+.SectionA {
+    display:block;
+    align-items: center;
+}
+    
+.Name .img-fluid-w-25 {
+    display: inline-block;
+    align-items:  center;
+    width: 50%;
+}
+
+.container-1 .container-2 {
+    display: block;
+    align-items: center;
+}
+
+.container-1 .container-2 p {
+    text-align: justify;
+}
+
+p {
+    text-align: justify;
+}
+
+.proposal1 p {
+    padding: 10px 50px;
+}
+
+img {
+    display: none;
+}
+
+.underline {
+    padding: 0 10px;
+    display: inline;
+    border-bottom: 10px solid #FCF6C3;
+    line-height: 0;
+}
+
+.container-fluid .card-text {
+    padding-top: 10px;
+}
+
+.fo p {
+    text-align: center;
+}
+
 .SectionB .Tith4 h3 {
     font-size: nth($sizes-titles, 4);
     font-weight: nth($weight, 4);
@@ -325,6 +340,7 @@ img {
 }
     
 .card-body .card-title {
+    width: auto;
     font-size: nth($sizes-titles, 2);
     font-weight: nth($weight, 1);
     color: $color-h2;
@@ -340,10 +356,12 @@ img {
     display: flex;
 }
 }
-  /* Desktop*/
+    
+/* Desktop */
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
 }
+
 @media screen and (orientation: landscape) {
 }
