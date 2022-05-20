@@ -109,37 +109,37 @@
 
          <nav class="container">
           <div class="row">
-            <div class="col"> <h3> FORMULARIO DE CONTACTO </h3>
+            <div class="col"> <h3> <span class="underline"> Formulario de contacto </h3></span>
               
 
-              <form class="row">
+              <form action="form.php" method="POST" class="row">
                 <div class="col-md-5">
                   <label for="inputName" class="form-label">Nombre</label>
-                  <input type="name" class="form-control" id="inputName" placeholder="Ej: Ana Maria">
+                  <input name="nombre" type="text" class="form-control" id="inputName" placeholder="Ej: Ana Maria">
                 </div>
 
                 <div class="col-md-5">
                   <label for="inputEmail4" class="form-label"> Correo electrónico</label>
-                  <input type="email" class="form-control" id="inputEmail4" placeholder="Ej: ana@hotmail.com">  
+                  <input name="email" type="email" class="form-control" id="inputEmail4" placeholder="Ej: ana@hotmail.com">  
                 </div>
                 
                 <div class="col-md-5">
-                  <label for="inputAddress" class="form-label"> País </label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="Ej: Argentina">
+                  <label for="inputCountry" class="form-label"> País </label>
+                  <input name="pais" type="text" class="form-control" id="inputCountry" placeholder="Ej: Argentina">
                 </div>
 
                 <div class="col-md-5">
-                  <label for="inputAddress2" class="form-label">Ciudad</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="Ej: Córdoba"></div>
+                  <label for="inputCity" class="form-label">Ciudad</label>
+                  <input name="ciudad" type="text" class="form-control" id="inputCity" placeholder="Ej: Córdoba"></div>
                     
                 <div class="col-md-10">
-                      <label for="inputCity" class="form-label"> Comentario o duda </label>
-                        <input type="text" class="form-control" id="inputCity">
-                  </div>
+                      <label for="inputComent" class="form-label"> Comentario o duda </label>
+                      <input name="coment" type="text" class="form-control" id="inputComent">
+                </div>
                       
                 <div class="col-md-5-enviar">
                       <button type="submit" class="btn btn-primary"> <b>Enviar</b> </button>
-                  </div>
+                </div>
                      
               </div>
                 </div>
@@ -150,7 +150,7 @@
                   <select id="inputState" class="form-select">
                     <option selected> Asesoría imagen personal $ </option>
                     <option> Asesoría express $ </option>
-                    <option> Confección de prendas </option>
+                    <option> Confección de prendas $ </option>
                   </select>
                   
                   <div class="col-md-5-comprar">

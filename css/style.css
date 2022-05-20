@@ -1048,6 +1048,17 @@ h1 h2 {
   padding-bottom: 20px;
 }
 
+.col-md-5 input[type=text],
+.col-md-5 input[type=email] {
+  padding: 9px;
+  border-radius: 5px;
+}
+
+.form-select {
+  padding: 9px;
+  border-radius: 5px;
+}
+
 /* Colores */
 /* Fonts */
 /* Bordes */
