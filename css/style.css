@@ -683,10 +683,10 @@ h3 {
     display: block;
     width: 50%;
     margin: auto;
-    border-radius: 30px 30px;
-    box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
-    -webkit-box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
-    -moz-box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
+    border-radius: 30px 10px;
+    box-shadow: 5px 5px rgba(160, 156, 176, 0.86);
+    -webkit-box-shadow: 5px 5px rgba(160, 156, 176, 0.86);
+    -moz-box-shadow: 5px 5px rgba(160, 156, 176, 0.86);
   }
 
   .container-fluid .row {
@@ -778,15 +778,15 @@ h1 h2 {
   }
 
   .asesor img {
-    width: 50%;
+    width: 70%;
     display: block;
     border: 1.5px solid #433451;
-    border-radius: 30px 30px;
-    box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
-    -webkit-box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
-    -moz-box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
+    border-radius: 30px 10px;
+    box-shadow: 5px 5px rgba(160, 156, 176, 0.86);
+    -webkit-box-shadow: 5px 5px rgba(160, 156, 176, 0.86);
+    -moz-box-shadow: 5px 5px rgba(160, 156, 176, 0.86);
     align-items: center;
-    margin: 0 100px;
+    margin: 10% 25%;
   }
 }
 /* Tablets */
@@ -808,12 +808,12 @@ h1 h2 {
     width: 50%;
     display: block;
     border: 1.5px solid #433451;
-    border-radius: 30px 30px;
-    box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
-    -webkit-box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
-    -moz-box-shadow: 10px 10px rgba(160, 156, 176, 0.86);
+    border-radius: 30px 10px;
+    box-shadow: 5px 5px rgba(160, 156, 176, 0.86);
+    -webkit-box-shadow: 5px 5px rgba(160, 156, 176, 0.86);
+    -moz-box-shadow: 5px 5px rgba(160, 156, 176, 0.86);
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
   }
 
   .asesor {
