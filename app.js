@@ -10,62 +10,57 @@ class Servicio {
 }
 
 calcularIva() {
-  this.precio = precio * 1.21;
+  this.precio = this.precio * 1.21;
 }
 }
 
 // Creo arrays para especificar cada servicio 
 
-const servicioImagen = [];
-const servicioAsesoria = [];
-const servicioCreacion = [];
+const servicios = [
+    {id: 1, nombre: "Imagen personal", precio: 3000},
+    {id: 2, nombre: "Asesoria Express", precio: 3500},
+    {id: 3, nombre: "Creación", precio: 4000},
+];
 
-// Cargo los servicios 
-
-servicioImagen.push(new Servicio (1, "Imagen personal", 3000));
-servicioAsesoria.push(new Servicio (2, "Asesoría express", 3500));
-servicioCreacion.push(new Servicio (3, "Creación", 4000));
-
-console.log (servicioImagen.precio);
 // Se le muestra al usuario 
 
 let avisoAUsuario = prompt ("Estos son los servicios disponibles (solo presione ENTER)");
-for(const imagen of servicioImagen) {
-    alert ("ID" + " " + imagen.id + " " + imagen.nombre);
+for(const servicio of servicios) {
+    alert ("ID" + " " + servicio.id + " " + servicio.nombre);
 }
 
-for(const asesoria of servicioAsesoria) {
-    alert ("ID" + " " + asesoria.id + " " + asesoria.nombre);
+const precioImagen = 3000;
+const precioAsesoria = 3500;
+const precioCreacion = 4000;
+
+function precioIm () {
+ return precioImagen * 1.21
 }
 
-for(const creación of servicioCreacion) {
-    alert ("ID" + " " + creación.id + " " + creación.nombre);
+function precioAs () {
+    return precioAsesoria * 1.21
 }
 
-// Precios NOOOOO
+function precioCre () {
+    return precioCreacion * 1.21
+}
 
-/* const iva = precio => precio * 1.21 
-
-console.log(iva)
- */
 // Interacción con el usuario 
 
-let servicioSeleccionado = prompt ("Ingrese el ID del servicio que desea adquirir (Solo los números 1, 2 3)")
-const selecImagen = servicioImagen.find(imagen => imagen.id === servicioSeleccionado);
-const selecAsesoria = servicioAsesoria.find(asesoria => asesoria.id === servicioSeleccionado);
-const selecCreacion = servicioCreacion.find(creacion => creacion.id === servicioSeleccionado);
+let servicioSeleccionado = prompt ("Ingrese el servicio que desea adquirir Imagen personal, Asesoría express o Creación")
+const selecImagen = servicios.find(servicios => servicios.nombre === servicioSeleccionado);
+const selecAsesoria = servicios.find(servicios => servicios.nombre === servicioSeleccionado);
+const selecCreacion = servicios.find(servicios => servicios.nombre === servicioSeleccionado);
 
 
 // Se indica el precio final del servicio elegido 
 // NoOOOO funciona 
-if (servicioSeleccionado === 1) {
-    alert ("El precio de tu compra es $")
-    console.log ("entro al primero", precio)
-} else if (servicioSeleccionado === 2) {
-    alert ("El precio de tu compra es $");
-    console.log ("entro al segundo", precio)
-} else if (servicioSeleccionado === 3) {
-    alert ("El precio de tu compra es $" + " " + precio);
+if (servicioSeleccionado === "Imagen personal") {
+    alert ("El precio de tu compra es $" + precioIm());
+} else if (servicioSeleccionado === "Asesoria express") {
+    alert ("El precio de tu compra es $" + precioAs());
+} else if (servicioSeleccionado === "Creacion") {
+    alert ("El precio de tu compra es $" + precioCre());
 } else {
     alert("El número ingresado no es válido")
 }
