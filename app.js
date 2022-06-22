@@ -54,7 +54,7 @@ const selecCreacion = servicios.find(servicios => servicios.nombre === servicioS
 
 
 // Se indica el precio final del servicio elegido 
-// NoOOOO funciona 
+
 if (servicioSeleccionado === "Imagen personal") {
     alert ("El precio de tu compra es $" + precioIm());
 } else if (servicioSeleccionado === "Asesoria express") {
